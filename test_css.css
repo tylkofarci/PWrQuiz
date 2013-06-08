@@ -1,0 +1,67 @@
+body
+{
+    font-family: Verdana;
+}
+div.buttons span
+{
+    border: 1px solid black;
+    background-color: lavender;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+div.searchBox
+{
+    text-align: center;
+}
+#searchResult div.question
+{
+    border-bottom: 1px solid silver;
+}
+.correct
+{
+    background-color: lightgreen;
+    text-decoration: underline;
+}
+.wrong
+{
+    background-color: pink;
+    text-decoration: line-through;
+}
+div.buttons
+{
+    text-align: center;
+}
+li, br
+{
+    margin: 3px;
+}
+.miss-counter
+{
+    font-size: 20pt;
+    color: red;
+}
+.tip, .single_answer
+{
+    color: black;
+    background-color: black;
+}
+.tip:hover
+{
+    background-color: white;
+}
+.small
+{
+    font-size: 10px;
+}
+.warning
+{
+    font-weight: bold;
+    border: 2px solid red;
+    background-color: pink;
+    text-align: center;
+}
+.clock
+{
+    font-size: 20pt;
+}
