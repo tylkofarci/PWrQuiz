@@ -77,7 +77,6 @@ function _Question(_question) {
         }
         html += "</ul></div>";
         $("div#searchResult").append(html);
-
     }
 }
 
@@ -226,7 +225,7 @@ function roll(size)
 }
 $(document).ready(function() {
     $("p.warning").remove();
-    $("body").append("<p class=\"warning\">Uwaga! Z niewiadomych powodów strona MOŻE NIE DZIAŁAĆ z sieci PWR WIFI!</p>");
+    $("body").append("<p class=\"warning\">Zapraszam do pomocy w rozwoju systemu! Cały kod i baza pytań dostępna na <a href=\"https://github.com/tylkofarci/PWrQuiz\">Githubie</a>. Znalazałeś błąd? Pomoż go poprawić!<p>");
     $("body").append("<div class=\"buttons\"><span class=\"training\">Trenuj</span><span class=\"test\">Test</span><span class=\"search\">Szukaj</span></div>");
     $("span.training").click(function() {
         $("p.warning").remove();
