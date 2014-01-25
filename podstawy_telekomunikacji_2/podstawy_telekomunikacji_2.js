@@ -1,6 +1,6 @@
 var test = {
     "time": 25,
-    "questionCount": 40,
+    "testQuestionCount": 40,
     "questionList": [
         {
             "question": "Szumy fluktuacyjne to:",

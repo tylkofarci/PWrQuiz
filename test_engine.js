@@ -242,7 +242,7 @@ $(document).ready(function() {
         $("p.warning").remove();
         $("div.buttons").remove();
         randomArr = roll(test.questionList.length);
-        randomArr = randomArr.slice(0, test.questionCount);
+        randomArr = randomArr.slice(0, test.testQuestionCount);
         renderMissCounter();
         renderClock(test.time);
         questionButtonPrint();

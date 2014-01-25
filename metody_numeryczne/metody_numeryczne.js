@@ -1,6 +1,6 @@
 var test = {
     "time": 15,
-    "questionCount": 30,
+    "testQuestionCount": 30,
     "questionList": [
         {
             "question": "1. Kwadratura Gaussa w odróżnieniu od kwadratury Newtona-Cotesa są zaliczane do wolnych algorytmów obliczeniowych.",
