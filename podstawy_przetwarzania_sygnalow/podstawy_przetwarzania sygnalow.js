@@ -1,6 +1,7 @@
 var test = {
     "time": 30,
     "testQuestionCount": 30,
+    "multiAnswer": true,
     "questionList": [
         {
             "question": "Który z poniższych wzorów jest wzorem na obliczanie wartości średniej procesu z rozkładu prawdopodobieństwa: ",
@@ -16,24 +17,24 @@ var test = {
             "question": "Zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20S%28f_1%2Cf_2%29%20%3D%20FT%5C%7B%20R%20%28%20t_1%2C%20t_2%20%29%20%5C%7D%20\"> definiuje:  ",
             "tip": "",
             "answer": [
-                {"text": "funkcj&#281; autokowariancji procesu niestacjonarnego", "valid": false},
-                {"text": "widmow&#261; g&#281;sto&#347;&#263; mocy procesu niestacjonarnego", "valid": true},
-                {"text": "funkcj&#281; autokorelacji procesu niestacjonarnego", "valid": false},
-                {"text": "dystrybuant&#281; 2-go rz&#281;du procesu niestacjonarnego", "valid": false},
+                {"text": "funkcję autokowariancji procesu niestacjonarnego", "valid": false},
+                {"text": "widmową gęstość mocy procesu niestacjonarnego", "valid": true},
+                {"text": "funkcję autokorelacji procesu niestacjonarnego", "valid": false},
+                {"text": "dystrybuantę 2-go rzędu procesu niestacjonarnego", "valid": false},
             ]
         },
         {
             "question": "Metoda Burg'a estymacji widmowej gęstości mocy jest metodą ",
             "tip": "",
             "answer": [
-                {"text": "parametryczn&#261;", "valid": true},
-                {"text": "efektywn&#261;", "valid": false},
-                {"text": "nieparametryczn&#261;", "valid": false},
+                {"text": "parametryczną", "valid": true},
+                {"text": "efektywną", "valid": false},
+                {"text": "nieparametryczną", "valid": false},
                 {"text": "podprzestrzeni", "valid": false},
             ]
         },
         {
-            "question": "Dla układu dyskretnego niezmiennego w czasie (<img src=\"http://latex.codecogs.com/png.latex?%20x%20%28%20n%20%29%20\"> - sygna&#322; wej&#347;ciowy, <img src=\"http://latex.codecogs.com/png.latex?%20h%20%28%20n%20%29%20\"> - odpowied&#378; impulsowa uk&#322;adu, <img src=\"http://latex.codecogs.com/png.latex?%20y%20%28%20n%20%29%20\"> - sygna&#322; wyj&#347;ciowy)  ",
+            "question": "Dla układu dyskretnego niezmiennego w czasie (<img src=\"http://latex.codecogs.com/png.latex?%20x%20%28%20n%20%29%20\"> - sygnał wejściowy, <img src=\"http://latex.codecogs.com/png.latex?%20h%20%28%20n%20%29%20\"> - odpowiedź impulsowa układu, <img src=\"http://latex.codecogs.com/png.latex?%20y%20%28%20n%20%29%20\"> - sygnał wyjściowy)  ",
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20y%20%28n%20%29%3D%5Csum_%7Bk%3D-%5Cinfty%7D%5E%7B%5Cinfty%7D%20h%20%28%20k%20%29%20x%20%28n-k%20%29%20\"> ", "valid": true},
@@ -58,10 +59,10 @@ var test = {
             "question": "Wartościowość modulacji jest to ",
             "tip": "",
             "answer": [
-                {"text": "liczba opisuj&#261;ca efektywno&#347;&#263; modulacji", "valid": false},
-                {"text": "liczba bit&#243;w zajmowanych przez pojedynczy symbol", "valid": false},
-                {"text": "liczba warto&#347;ci jaka mo&#380;e przyj&#261;&#263; ka&#380;dy z symboli", "valid": true},
-                {"text": "liczba no&#347;nych u&#380;ytych w modulacji", "valid": false},
+                {"text": "liczba opisująca efektywność modulacji", "valid": false},
+                {"text": "liczba bitów zajmowanych przez pojedynczy symbol", "valid": false},
+                {"text": "liczba wartości jaka może przyjąć każdy z symboli", "valid": true},
+                {"text": "liczba nośnych użytych w modulacji", "valid": false},
             ]
         },
         {
@@ -80,10 +81,10 @@ var test = {
             "question": "Estymator ",
             "tip": "",
             "answer": [
-                {"text": "jest wielko&#347;ci&#261; losow&#261;", "valid": true},
-                {"text": "posiada rozk&#322;ad prawdopodobie&#324;stwa", "valid": true},
-                {"text": "jest statystycznie niezale&#380;ny", "valid": false},
-                {"text": "jest wielko&#347;ci&#261; deterministyczn&#261;", "valid": false},
+                {"text": "jest wielkością losową", "valid": true},
+                {"text": "posiada rozkład prawdopodobieństwa", "valid": true},
+                {"text": "jest statystycznie niezależny", "valid": false},
+                {"text": "jest wielkością deterministyczną", "valid": false},
                 {"text": "jest nieskorelowany", "valid": false},
             ]
         },
@@ -91,10 +92,10 @@ var test = {
             "question": "Okno w metodzie okna projektowania filtrów cyfrowych stosowane jest w celu ",
             "tip": "",
             "answer": [
-                {"text": "zmniejszenia t&#322;umienia w pa&#347;mie przepustowym", "valid": false},
+                {"text": "zmniejszenia tłumienia w paśmie przepustowym", "valid": false},
                 {"text": "likwidacji przecieku widma", "valid": false},
-                {"text": "zmniejszenia szeroko&#347;ci pasma przej&#347;ciowego", "valid": false},
-                {"text": "zwi&#281;kszenia t&#322;umienia w pa&#347;mie zaporowym", "valid": true},
+                {"text": "zmniejszenia szerokości pasma przejściowego", "valid": false},
+                {"text": "zwiększenia tłumienia w paśmie zaporowym", "valid": true},
             ]
         },
         {
@@ -113,11 +114,11 @@ var test = {
             "question": "Do przeprowadzenia estymacji statystyki lub parametru procesu konieczne jest co najmniej ",
             "tip": "",
             "answer": [
-                {"text": "przekr&#243;j procesu po czasie", "valid": false},
-                {"text": "N pr&#243;bek jednej z realizacji", "valid": true},
-                {"text": "przekr&#243;j procesu po zbiorze", "valid": false},
-                {"text": "pr&#243;bki jednej z realizacji", "valid": false},
-                {"text": "N pr&#243;bek kilku realizacji", "valid": false},
+                {"text": "przekrój procesu po czasie", "valid": false},
+                {"text": "N próbek jednej z realizacji", "valid": true},
+                {"text": "przekrój procesu po zbiorze", "valid": false},
+                {"text": "próbki jednej z realizacji", "valid": false},
+                {"text": "N próbek kilku realizacji", "valid": false},
             ]
         },
         {
@@ -148,23 +149,23 @@ var test = {
             "tip": "",
             "answer": [
                 {"text": "histogram", "valid": false},
-                {"text": "g&#281;sto&#347;&#263; prawdopodobie&#324;stwa 1-go rz&#281;du", "valid": false},
-                {"text": "dystrubuant&#281; 1-go rz&#281;du", "valid": true},
-                {"text": "prawdopodobie&#324;stwo wyst&#261;pienia warto&#347;ci <img src=\"http://latex.codecogs.com/png.latex?%20x\"> sygna&#322;u ", "valid": false},
+                {"text": "gęstość prawdopodobieństwa 1-go rzędu", "valid": false},
+                {"text": "dystrubuantę 1-go rzędu", "valid": true},
+                {"text": "prawdopodobieństwo wystąpienia wartości <img src=\"http://latex.codecogs.com/png.latex?%20x\"> sygnału ", "valid": false},
             ]
         },
         {
             "question": "Interpolacja to proces ",
             "tip": "",
             "answer": [
-                {"text": "zmniejszania warto&#347;ci pr&#243;bek", "valid": false},
-                {"text": "zmniejszania cz&#281;stotliwo&#347;ci pr&#243;bkowania", "valid": false},
-                {"text": "zwi&#281;kszania warto&#347;ci pr&#243;bek", "valid": false},
-                {"text": "zwi&#281;kszania cz&#281;stotliwo&#347;ci pr&#243;bkowania", "valid": true},
+                {"text": "zmniejszania wartości próbek", "valid": false},
+                {"text": "zmniejszania częstotliwości próbkowania", "valid": false},
+                {"text": "zwiększania wartości próbek", "valid": false},
+                {"text": "zwiększania częstotliwości próbkowania", "valid": true},
             ]
         },
         {
-            "question": "W wyniku <img src=\"http://latex.codecogs.com/png.latex?%20N\">-punktowej DFT powstaje ci&#261;g <img src=\"http://latex.codecogs.com/png.latex?%20N\">-elementowy. W ci&#261;gu tym liczba niezale&#380;nych wyraz&#243;w wynosi  ",
+            "question": "W wyniku <img src=\"http://latex.codecogs.com/png.latex?%20N\">-punktowej DFT powstaje ciąg <img src=\"http://latex.codecogs.com/png.latex?%20N\">-elementowy. W ciągu tym liczba niezależnych wyrazów wynosi  ",
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20N-1\"> ", "valid": false},
@@ -177,10 +178,10 @@ var test = {
             "question": "Przekrój procesu stochastycznego po czasie jest: ",
             "tip": "",
             "answer": [
-                {"text": "dystrybuant&#261;", "valid": false},
-                {"text": "zmienn&#261; losow&#261;", "valid": true},
-                {"text": "realizacj&#261;", "valid": false},
-                {"text": "rozk&#322;adem prawdopodobie&#324;stwa", "valid": false},
+                {"text": "dystrybuantą", "valid": false},
+                {"text": "zmienną losową", "valid": true},
+                {"text": "realizacją", "valid": false},
+                {"text": "rozkładem prawdopodobieństwa", "valid": false},
             ]
         },
         {
@@ -198,10 +199,10 @@ var test = {
             "question": "W definicji <img src=\"http://latex.codecogs.com/png.latex?%20%20S%28f_1%2C%20f_2%29%20%3D%20%5Cmathcal%20FT%20%5Crm%20%5C%7BR%28t_1%2Ct_2%29%20%5C%7D%20\">symbol <img src=\"http://latex.codecogs.com/png.latex?%20%20%5Cmathcal%20FT%20\"> oznacza:  ",
             "tip": "",
             "answer": [
-                {"text": "dystrybuant&#281; 1-go rz&#281;du", "valid": false},
-                {"text": "transformacj&#281; falkow&#261;", "valid": false},
-                {"text": "dystrybuant&#281; 2-go rz&#281;du", "valid": false},
-                {"text": "dwuwymiarow&#261; transformacj&#281; Fouriera", "valid": true},
+                {"text": "dystrybuantę 1-go rzędu", "valid": false},
+                {"text": "transformację falkową", "valid": false},
+                {"text": "dystrybuantę 2-go rzędu", "valid": false},
+                {"text": "dwuwymiarową transformację Fouriera", "valid": true},
             ]
         },
         {
@@ -209,9 +210,9 @@ var test = {
             "tip": "",
             "answer": [
                 {"text": "zafalowaniami w pasmach przepustowym i zaporowym", "valid": true},
-                {"text": "maksymalnie p&#322;askim modu&#322;em funkcji transmitancji", "valid": false},
-                {"text": "zafalowaniami tylko w pa&#347;mie przepustowym", "valid": false},
-                {"text": "zafalowaniami tylko w pa&#347;mie zaporowym", "valid": false},
+                {"text": "maksymalnie płaskim modułem funkcji transmitancji", "valid": false},
+                {"text": "zafalowaniami tylko w paśmie przepustowym", "valid": false},
+                {"text": "zafalowaniami tylko w paśmie zaporowym", "valid": false},
             ]
         },
         {
@@ -251,7 +252,7 @@ var test = {
             "tip": "",
             "answer": [
                 {"text": "minimalnego", "valid": false},
-                {"text": "przej&#347;ciowego", "valid": false},
+                {"text": "przejściowego", "valid": false},
                 {"text": "zaporowego", "valid": false},
                 {"text": "przepustowego", "valid": true},
             ]
@@ -260,26 +261,26 @@ var test = {
             "question": "Filtry typu FIR (o skończonej długości odpowiedzi impulsowej) ",
             "tip": "",
             "answer": [
-                {"text": "posiadaj&#261; liniow&#261; faz&#281;", "valid": false},
-                {"text": "nie posiadaj&#261; biegun&#243;w", "valid": true},
-                {"text": "mog&#261; mie&#263; liniow&#261; faz&#281;", "valid": true},
-                {"text": "s&#261; zawsze stabilne", "valid": true},
-                {"text": "nie posiadaj&#261; zer", "valid": false},
-                {"text": "mog&#261; by&#263; niestabilne", "valid": false},
+                {"text": "posiadają liniową fazę", "valid": false},
+                {"text": "nie posiadają biegunów", "valid": true},
+                {"text": "mogą mieć liniową fazę", "valid": true},
+                {"text": "są zawsze stabilne", "valid": true},
+                {"text": "nie posiadają zer", "valid": false},
+                {"text": "mogą być niestabilne", "valid": false},
             ]
         },
         {
             "question": "Aliasing to ",
             "tip": "",
             "answer": [
-                {"text": "nak&#322;adanie si&#281; na siebie widma oryginalnego i widma powtarzanego w otoczeniu po&#322;owy cz&#281;stotliwo&#347;ci pr&#243;bkowania", "valid": true},
-                {"text": "rozmycie pr&#261;&#380;ka DFT", "valid": false},
+                {"text": "nakładanie się na siebie widma oryginalnego i widma powtarzanego w otoczeniu połowy częstotliwości próbkowania", "valid": true},
+                {"text": "rozmycie prążka DFT", "valid": false},
                 {"text": "to samo co przeciek widma", "valid": false},
-                {"text": "przesuni&#281;cie fazy pr&#261;&#380;ka DFT", "valid": false},
+                {"text": "przesunięcie fazy prążka DFT", "valid": false},
             ]
         },
         {
-            "question": "Estymator widmowej gęstości mocy procesu można uzyskać z zależności (<img src=\"http://latex.codecogs.com/png.latex?%20%20FT%20\"> oznacza transformacj&#281; Fouriera)  ",
+            "question": "Estymator widmowej gęstości mocy procesu można uzyskać z zależności (<img src=\"http://latex.codecogs.com/png.latex?%20%20FT%20\"> oznacza transformację Fouriera)  ",
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20%7C%20FT%20%5C%7B%20%5Chat%20R%28k%29%20w%28k%29%20%5C%7D%20%7C%5E2%20\"> ", "valid": false},
@@ -292,32 +293,32 @@ var test = {
             "question": "Systemu zmienne w czasie różnią się od systemów niezmiennych w czasie tym, że ",
             "tip": "",
             "answer": [
-                {"text": "sygna&#322; na jego wyj&#347;ciu zmienia si&#281; niezale&#380;nie od sygna&#322;u wej&#347;ciowego", "valid": false},
-                {"text": "odpowied&#378; impulsowa jest zale&#380;na od czasu pobudzenia systemu", "valid": true},
-                {"text": "odpowied&#380; systemu w danej chwili czasu zale&#380;y jedynie od sygna&#322;u na wej&#347;ciu w tej samej chwili czasu", "valid": false},
-                {"text": "funkcja transmitancji jest funkcj&#261; zar&#243;wno cz&#281;stotliwo&#347;ci jak i czasu", "valid": true},
+                {"text": "sygnał na jego wyjściu zmienia się niezależnie od sygnału wejściowego", "valid": false},
+                {"text": "odpowiedź impulsowa jest zależna od czasu pobudzenia systemu", "valid": true},
+                {"text": "odpowiedż systemu w danej chwili czasu zależy jedynie od sygnału na wejściu w tej samej chwili czasu", "valid": false},
+                {"text": "funkcja transmitancji jest funkcją zarówno częstotliwości jak i czasu", "valid": true},
             ]
         },
         {
             "question": "W poleceniu MATLAB postaci [b a] = butter (N, [0.2 0.3], 'stop'), N oznacza: ",
             "tip": "",
             "answer": [
-                {"text": "liczb&#281; biegun&#243;w", "valid": false},
-                {"text": "liczb&#281; par zer", "valid": false},
-                {"text": "d&#322;ugo&#347;&#263; odpowiedzi impulsowej w pr&#243;bkach", "valid": false},
-                {"text": "liczb&#281; par biegun&#243;w", "valid": true},
-                {"text": "liczb&#281; zer", "valid": false},
-                {"text": "liczb&#281; pasm cz&#281;stotliwo&#347;ci", "valid": false},
+                {"text": "liczbę biegunów", "valid": false},
+                {"text": "liczbę par zer", "valid": false},
+                {"text": "długość odpowiedzi impulsowej w próbkach", "valid": false},
+                {"text": "liczbę par biegunów", "valid": true},
+                {"text": "liczbę zer", "valid": false},
+                {"text": "liczbę pasm częstotliwości", "valid": false},
             ]
         },
         {
             "question": "Zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20m%28t_1%2Ct_2%2C...%2Ct_n%29%20%3D%20E%20%5C%5Bx%28t_1%29x%28t_2%29...x%28t_n%29%20%5C%7D%20\"> definiuje:  ",
             "tip": "",
             "answer": [
-                {"text": "kumulant n-tego rz&#281;du dowolnego procesu ", "valid": false},
-                {"text": "moment n-tego rz&#281;du dowolnego procesu ", "valid": true},
-                {"text": "autokowariancj&#281; n-tego rz&#281;du dowolnego procesu ", "valid": false},
-                {"text": "dystrybuant&#281; n-tego rz&#281;du dowolnego procesu ", "valid": false},
+                {"text": "kumulant n-tego rzędu dowolnego procesu ", "valid": false},
+                {"text": "moment n-tego rzędu dowolnego procesu ", "valid": true},
+                {"text": "autokowariancję n-tego rzędu dowolnego procesu ", "valid": false},
+                {"text": "dystrybuantę n-tego rzędu dowolnego procesu ", "valid": false},
             ]
         },
         {
@@ -325,7 +326,7 @@ var test = {
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20F%28x_1%2C...%2Cx_n%2Ct_1%2B%5Cepsilon%2C...%2Ct_n%2B%5Cepsilon%29%20%3D%20F%28x_1%2C...%2Cx_n%2Ct_1%2C...%2Ct_n%29%20\"> ", "valid": true},
-                {"text": "przesuni&#281;cie punktu obserwacji nie zmienia rozk&#322;ad&#243;w pradopodobienstwa procesu", "valid": true},
+                {"text": "przesunięcie punktu obserwacji nie zmienia rozkładów pradopodobienstwa procesu", "valid": true},
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20m%28t%29%20%3D%20m%3B%20%5Cquad%20R%28t_1%2Ct_2%29%20%3D%20R%28%5Ctau%29%20\"> ", "valid": false},
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20f%28x_1%2C...%2Cx_n%2Ct_1%2B%5Cepsilon%2C...%2Ct_n%2B%5Cepsilon%29%20%3D%20f%28x_1%2C...%2Cx_n%2Ct_1%2C...%2Ct_n%29%20\"> ", "valid": true},
             ]
@@ -334,25 +335,25 @@ var test = {
             "question": "Dla filtrów o skończonej długości odpowiedzi impulsowej ",
             "tip": "",
             "answer": [
-                {"text": "stopie&#324; wielomianu w liczniku wynosi zero", "valid": false},
-                {"text": "stopie&#324; wielomianu w mianowniku wynosi zero", "valid": true},
-                {"text": "stopie&#324; wielomianu w mianowniku wynosi jeden", "valid": false},
-                {"text": "stopie&#324; wielomianu w liczniku wynosi jeden", "valid": false},
+                {"text": "stopień wielomianu w liczniku wynosi zero", "valid": false},
+                {"text": "stopień wielomianu w mianowniku wynosi zero", "valid": true},
+                {"text": "stopień wielomianu w mianowniku wynosi jeden", "valid": false},
+                {"text": "stopień wielomianu w liczniku wynosi jeden", "valid": false},
             ]
         },
         {
             "question": "Zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20E%20%5C%7B%5Bx%28t%29%20-%20m%28t%29%5D%5E2%20%5C%7D%20\"> definiuje  ",
             "tip": "",
             "answer": [
-                {"text": "rozk&#322;ad prawdopodobie&#324;stwa procesu stochastycznego", "valid": false},
-                {"text": "wariancj&#281; procesu stochastycznego", "valid": true},
-                {"text": "warto&#347;&#263; &#347;redni&#261; procesu stochastycznego", "valid": false},
-                {"text": "warto&#347;&#263; &#347;redniokwadratow&#261; procesu stochastycznego", "valid": false},
+                {"text": "rozkład prawdopodobieństwa procesu stochastycznego", "valid": false},
+                {"text": "wariancję procesu stochastycznego", "valid": true},
+                {"text": "wartość średnią procesu stochastycznego", "valid": false},
+                {"text": "wartość średniokwadratową procesu stochastycznego", "valid": false},
                 {"text": "funkcje autokowariancji procesu stochastycznego", "valid": false},
             ]
         },
         {
-            "question": "Są dane cztery przebiegi sinusoidalne. Częstotliwość próbkowania jest <img src=\"http://latex.codecogs.com/png.latex?%20f_s%3D1000\"> Hz, liczba pr&#243;bek <img src=\"http://latex.codecogs.com/png.latex?%20N%3D1000\">, <img src=\"http://latex.codecogs.com/png.latex?%20n%3D0%2C%201%2C%202%2C%20%5Cldots%20%2C%20N-1\">. Wska&#380; te przebiegi, dla kt&#243;rych w wyniku DFT pojawi si&#281; przeciek widma  ",
+            "question": "Są dane cztery przebiegi sinusoidalne. Częstotliwość próbkowania jest <img src=\"http://latex.codecogs.com/png.latex?%20f_s%3D1000\"> Hz, liczba próbek <img src=\"http://latex.codecogs.com/png.latex?%20N%3D1000\">, <img src=\"http://latex.codecogs.com/png.latex?%20n%3D0%2C%201%2C%202%2C%20%5Cldots%20%2C%20N-1\">. Wskaż te przebiegi, dla których w wyniku DFT pojawi się przeciek widma  ",
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20x_n%3D10%5Ccdot%20%5Csin%20%282%5Ccdot%20%5Cpi%20%5Ccdot%2071.4%5Ccdot%20n%2FN%29\"> ", "valid": true},
@@ -362,7 +363,7 @@ var test = {
             ]
         },
         {
-            "question": "Jaka jest częstotliwość <img src=\"http://latex.codecogs.com/png.latex?%20m\">-tego pr&#261;&#380;ka widma obliczonego przy pomocy $N$-punktowej DFT (<img src=\"http://latex.codecogs.com/png.latex?%20f_s\"> -- cz&#281;stotliwo&#347;&#263; pr&#243;bkowania)  ",
+            "question": "Jaka jest częstotliwość <img src=\"http://latex.codecogs.com/png.latex?%20m\">-tego prążka widma obliczonego przy pomocy $N$-punktowej DFT (<img src=\"http://latex.codecogs.com/png.latex?%20f_s\"> -- częstotliwość próbkowania)  ",
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20N%5Ccdot%20f_s%2Fm\"> ", "valid": false},
@@ -375,10 +376,10 @@ var test = {
             "question": "Filtracja innowacyjna bierze swoją nazwę od tego, że (zaznacz wszystkie prawidłowe odpowiedzi): ",
             "tip": "",
             "answer": [
-                {"text": "powsta&#322;a w czasach wielu innych innowacji", "valid": false},
+                {"text": "powstała w czasach wielu innych innowacji", "valid": false},
                 {"text": "jest nowoczesna", "valid": false},
-                {"text": "ka&#380;da kolejna warto&#347;&#263; sygna&#322;u b&#322;&#281;du wnosi nowa informacj&#281;", "valid": true},
-                {"text": "ka&#380;da kolejna warto&#347;&#263; sygna&#322;u b&#322;&#281;du jest nieskorelowana z poprzednimi warto&#347;ciami", "valid": true},
+                {"text": "każda kolejna wartość sygnału błędu wnosi nowa informację", "valid": true},
+                {"text": "każda kolejna wartość sygnału błędu jest nieskorelowana z poprzednimi wartościami", "valid": true},
             ]
         },
         {
@@ -396,35 +397,35 @@ var test = {
             "question": "Wartość estymatora zwykle różni się od wartości dokładnej estymowanej wielkości, ponieważ ",
             "tip": "",
             "answer": [
-                {"text": "estymacja realizowana jest w oparciu o jedn&#261; realizacj&#281;", "valid": false},
+                {"text": "estymacja realizowana jest w oparciu o jedną realizację", "valid": false},
                 {"text": "nie dysponujemy wszystkimi realizacjami", "valid": false},
-                {"text": "sko&#324;czony zbi&#243;r pr&#243;bek nie jest reprezentatywny dla ca&#322;ej realizacji", "valid": true},
-                {"text": "operuje na pr&#243;bkach a b&#322;&#281;dy pr&#243;bkowania s&#261; nieuniknione", "valid": false},
+                {"text": "skończony zbiór próbek nie jest reprezentatywny dla całej realizacji", "valid": true},
+                {"text": "operuje na próbkach a błędy próbkowania są nieuniknione", "valid": false},
             ]
         },
         {
             "question": "Estymator zgodny, to taki ",
             "tip": "",
             "answer": [
-                {"text": "b&#322;&#261;d &#347;redniokwadratowy jest na zadawalaj&#261;cym poziomie i osi&#261;ga warto&#347;&#263; minimaln&#261;", "valid": false},
-                {"text": "kt&#243;rego obci&#261;&#380;enie jest zerowe je&#347;li liczba pr&#243;bek jest coraz wieksza", "valid": false},
-                {"text": "dla kt&#243;rego odleg&#322;o&#347;&#263; wynik&#243;w estymacji w sensie statystycznym, maleje ze wzrostem liczby pr&#243;bek N", "valid": true},
-                {"text": "dla kt&#243;rego wyniki s&#261; najlepsze z mo&#380;liwych do uzyskania przy danej liczbie pr&#243;bek", "valid": false},
+                {"text": "błąd średniokwadratowy jest na zadawalającym poziomie i osiąga wartość minimalną", "valid": false},
+                {"text": "którego obciążenie jest zerowe jeśli liczba próbek jest coraz wieksza", "valid": false},
+                {"text": "dla którego odległość wyników estymacji w sensie statystycznym, maleje ze wzrostem liczby próbek N", "valid": true},
+                {"text": "dla którego wyniki są najlepsze z możliwych do uzyskania przy danej liczbie próbek", "valid": false},
             ]
         },
         {
             "question": "Poziom ufności opisuje ",
             "tip": "",
             "answer": [
-                {"text": "ryzyko, &#380;e wynik estymacji znajdzie si&#281; w przedziale ufno&#347;ci", "valid": false},
-                {"text": "prawdopodobie&#324;stwo, &#380;e wynik estymacji znajdzie si&#281; poza przedzia&#322;em ufno&#347;ci", "valid": false},
-                {"text": "prawdopodobie&#324;stwo, &#380;e wynik estymacji znajdzie si&#281; w przedziale ufno&#347;ci", "valid": true},
-                {"text": "pewno&#347;&#263;, &#380;e wynik estymacji znajdzie si&#281; w przedziale ufno&#347;ci", "valid": false},
-                {"text": "pewno&#347;&#263;, &#380;e wynik estymacji znajdzie si&#281; poza przedzia&#322;em ufno&#347;ci", "valid": false},
+                {"text": "ryzyko, że wynik estymacji znajdzie się w przedziale ufności", "valid": false},
+                {"text": "prawdopodobieństwo, że wynik estymacji znajdzie się poza przedziałem ufności", "valid": false},
+                {"text": "prawdopodobieństwo, że wynik estymacji znajdzie się w przedziale ufności", "valid": true},
+                {"text": "pewność, że wynik estymacji znajdzie się w przedziale ufności", "valid": false},
+                {"text": "pewność, że wynik estymacji znajdzie się poza przedziałem ufności", "valid": false},
             ]
         },
         {
-            "question": "W jakiej metodzie identyfikacji systemu funkcja transmitancji wyznaczana jest z zależności <img src=\"http://latex.codecogs.com/png.latex?%20%20%5Chat%20H%28f%29%20%3D%20%7B%7B%5Chat%20S_%7Byx%7D%28f%29%7D%20%5Cover%20%7B%5Chat%20S_%7Bxx%7D%28f%29%7D%7D%20\">, gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20S%20\"> oznacza widmow&#261; g&#281;sto&#347;&#263; mocy  ",
+            "question": "W jakiej metodzie identyfikacji systemu funkcja transmitancji wyznaczana jest z zależności <img src=\"http://latex.codecogs.com/png.latex?%20%20%5Chat%20H%28f%29%20%3D%20%7B%7B%5Chat%20S_%7Byx%7D%28f%29%7D%20%5Cover%20%7B%5Chat%20S_%7Bxx%7D%28f%29%7D%7D%20\">, gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20S%20\"> oznacza widmową gęstość mocy  ",
             "tip": "",
             "answer": [
                 {"text": "impulsowej", "valid": false},
@@ -437,14 +438,14 @@ var test = {
             "question": "To, że odpowiedź impulsowa systemu posiada niezerowe wartości tylko dla czasu większego lub równego zeru jest warunkiem: ",
             "tip": "",
             "answer": [
-                {"text": "stabilno&#347;ci systemu", "valid": false},
-                {"text": "przyczynowo&#347;ci systemu", "valid": true},
-                {"text": "nie wprowadzania przez system op&#243;&#378;nienia", "valid": false},
-                {"text": "wszechprzepustowo&#347;ci systemu", "valid": false},
+                {"text": "stabilności systemu", "valid": false},
+                {"text": "przyczynowości systemu", "valid": true},
+                {"text": "nie wprowadzania przez system opóźnienia", "valid": false},
+                {"text": "wszechprzepustowości systemu", "valid": false},
             ]
         },
         {
-            "question": "Jeżeli sygnał został spróbkowany z częstotliwością <img src=\"http://latex.codecogs.com/png.latex?%20f_s\">, to jego dyskretne widmo w dziedzinie cz&#281;stotliwo&#347;ci jest powielane na osi cz&#281;stotliwo&#347;ci co  ",
+            "question": "Jeżeli sygnał został spróbkowany z częstotliwością <img src=\"http://latex.codecogs.com/png.latex?%20f_s\">, to jego dyskretne widmo w dziedzinie częstotliwości jest powielane na osi częstotliwości co  ",
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%202%5Ccdot%20f_s\"> ", "valid": false},
@@ -454,14 +455,14 @@ var test = {
             ]
         },
         {
-            "question": "Zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20m%28t%29%20%3D%20m%20%3D%5Cint_R%20x%20f%28x%29%20dx%20\"> jest s&#322;uszna dla procesu:  ",
+            "question": "Zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20m%28t%29%20%3D%20m%20%3D%5Cint_R%20x%20f%28x%29%20dx%20\"> jest słuszna dla procesu:  ",
             "tip": "",
             "answer": [
                 {"text": "cyklostacjonarnego", "valid": false},
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20m%20\"> stacjonarnego ", "valid": false},
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20%5Calpha%20\"> stacjonarnego ", "valid": false},
-                {"text": "stacjonarnego ca&#322;kowicie", "valid": true},
-                {"text": "s&#322;abo stacjonarnego", "valid": true},
+                {"text": "stacjonarnego całkowicie", "valid": true},
+                {"text": "słabo stacjonarnego", "valid": true},
                 {"text": "lokalnie stacjonarnego", "valid": false},
             ]
         },
@@ -477,27 +478,27 @@ var test = {
             ]
         },
         {
-            "question": "We wzorze <img src=\"http://latex.codecogs.com/png.latex?%20%20%5Chat%20f%28x%29%20%3D%20%7BN_x%20%5Cover%20%7BN%20w%7D%7D%20\"> wielko&#347;&#263; <img src=\"http://latex.codecogs.com/png.latex?%20%20w%20\"> jest  ",
+            "question": "We wzorze <img src=\"http://latex.codecogs.com/png.latex?%20%20%5Chat%20f%28x%29%20%3D%20%7BN_x%20%5Cover%20%7BN%20w%7D%7D%20\"> wielkość <img src=\"http://latex.codecogs.com/png.latex?%20%20w%20\"> jest  ",
             "tip": "",
             "answer": [
-                {"text": "chwilow&#261; warto&#347;ci&#261; sygna&#322;u", "valid": false},
-                {"text": "chwilow&#261; warto&#347;ci&#261; pr&#243;bki", "valid": false},
+                {"text": "chwilową wartością sygnału", "valid": false},
+                {"text": "chwilową wartością próbki", "valid": false},
                 {"text": "oknem czasowym", "valid": false},
-                {"text": "szeroko&#347;ci&#261; przedzia&#322;u estymacji", "valid": true},
+                {"text": "szerokością przedziału estymacji", "valid": true},
             ]
         },
         {
             "question": "Liczba próbek w algorytmie radix-2 obliczania szybkiej transformacji Fouriera musi być potęgą liczby 2 ponieważ ",
             "tip": "",
             "answer": [
-                {"text": "jest to jedyna mo&#380;liwo&#347;&#263; obliczenia transformacji", "valid": false},
-                {"text": "pr&#243;bki dzielone s&#261; na nieparzyste i parzyste i liczone s&#261; transformaty z 2 podzbior&#243;w pr&#243;bek", "valid": false},
-                {"text": "pr&#243;bki dzielone s&#261; na parzyste i nieparzyste a&#380; do uzyskania podzbior&#243;w 2-punktowych", "valid": true},
-                {"text": "za cz&#281;&#347;&#263; pr&#243;bek odpowiada funkcja sinus a za drug&#261; cz&#281;&#347;&#263; funkcja cosinus", "valid": false},
+                {"text": "jest to jedyna możliwość obliczenia transformacji", "valid": false},
+                {"text": "próbki dzielone są na nieparzyste i parzyste i liczone są transformaty z 2 podzbiorów próbek", "valid": false},
+                {"text": "próbki dzielone są na parzyste i nieparzyste aż do uzyskania podzbiorów 2-punktowych", "valid": true},
+                {"text": "za część próbek odpowiada funkcja sinus a za drugą część funkcja cosinus", "valid": false},
             ]
         },
         {
-            "question": "Kaskadowe połączenie dwóch liniowych układów niezmiennych w czasie, o odpowiedziach impulsowych <img src=\"http://latex.codecogs.com/png.latex?%20h_1%20%28n%20%29\"> i <img src=\"http://latex.codecogs.com/png.latex?%20h_2%20%28n%20%29\">, ma &#322;&#261;czn&#261; odpowied&#378; impulsow&#261;  ",
+            "question": "Kaskadowe połączenie dwóch liniowych układów niezmiennych w czasie, o odpowiedziach impulsowych <img src=\"http://latex.codecogs.com/png.latex?%20h_1%20%28n%20%29\"> i <img src=\"http://latex.codecogs.com/png.latex?%20h_2%20%28n%20%29\">, ma łączną odpowiedź impulsową  ",
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20h%20%28n%20%29%3Dh_1%20%28n%20%29%2Bh_2%20%28n%20%29\"> ", "valid": false},
@@ -511,8 +512,8 @@ var test = {
             "tip": "",
             "answer": [
                 {"text": "dyskretnym nieokresowym", "valid": true},
-                {"text": "ci&#261;g&#322;ym okresowym", "valid": false},
-                {"text": "ci&#261;g&#322;ym nieokresowym", "valid": false},
+                {"text": "ciągłym okresowym", "valid": false},
+                {"text": "ciągłym nieokresowym", "valid": false},
                 {"text": "dyskretnym okresowym", "valid": false},
             ]
         },
@@ -520,16 +521,16 @@ var test = {
             "question": "W poleceniu MATLAB postaci b = fir1 (n, [0.2 0.3], 'stop'), n oznacza: ",
             "tip": "",
             "answer": [
-                {"text": "liczb&#281; par zer", "valid": false},
-                {"text": "liczb&#281; pasm cz&#281;stotliwo&#347;ci", "valid": false},
-                {"text": "liczb&#281; zer", "valid": false},
-                {"text": "d&#322;ugo&#347;&#263; odpowiedzi impulsowej w pr&#243;bkach", "valid": true},
-                {"text": "liczb&#281; par biegun&#243;w", "valid": false},
-                {"text": "liczb&#281; biegun&#243;w", "valid": false},
+                {"text": "liczbę par zer", "valid": false},
+                {"text": "liczbę pasm częstotliwości", "valid": false},
+                {"text": "liczbę zer", "valid": false},
+                {"text": "długość odpowiedzi impulsowej w próbkach", "valid": true},
+                {"text": "liczbę par biegunów", "valid": false},
+                {"text": "liczbę biegunów", "valid": false},
             ]
         },
         {
-            "question": "Jeżeli ciągi czasowe <img src=\"http://latex.codecogs.com/png.latex?%20x_%7B1%7D%5Bn%5D\"> i <img src=\"http://latex.codecogs.com/png.latex?%20x_%7B2%7D%5Bn%5D\"> maj&#261; transformaty Fouriera (DFT), odpowiednio, <img src=\"http://latex.codecogs.com/png.latex?%20X_1%28m%29\"> i <img src=\"http://latex.codecogs.com/png.latex?%20X_2%28m%29\">, to dla <img src=\"http://latex.codecogs.com/png.latex?%20x_%7Bsum%7D%5Bn%5D%3Dx_1%5Bn%5D%2Bx_2%5Bn%5D\"> w&#322;a&#347;ciwo&#347;&#263; liniowo&#347;ci DTF mo&#380;na zapisa&#263; jako  ",
+            "question": "Jeżeli ciągi czasowe <img src=\"http://latex.codecogs.com/png.latex?%20x_%7B1%7D%5Bn%5D\"> i <img src=\"http://latex.codecogs.com/png.latex?%20x_%7B2%7D%5Bn%5D\"> mają transformaty Fouriera (DFT), odpowiednio, <img src=\"http://latex.codecogs.com/png.latex?%20X_1%28m%29\"> i <img src=\"http://latex.codecogs.com/png.latex?%20X_2%28m%29\">, to dla <img src=\"http://latex.codecogs.com/png.latex?%20x_%7Bsum%7D%5Bn%5D%3Dx_1%5Bn%5D%2Bx_2%5Bn%5D\"> właściwość liniowości DTF można zapisać jako  ",
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20X_%7Bsum%7D%28m%29%3DX_1%28m%29%5Cstar%20X_2%28m%29\">  (splot) ", "valid": false},
@@ -539,7 +540,7 @@ var test = {
             ]
         },
         {
-            "question": "Filtr IIR (o nieskończonej odpowiedzi impulsowej) ma 2 zera sprzężone: <img src=\"http://latex.codecogs.com/png.latex?%20z%3D%5Cpm%20j%5Ccdot%201\">. Dla jakiej pary sprz&#281;&#380;onych biegun&#243;w taki filtr b&#281;dzie stabilny?  ",
+            "question": "Filtr IIR (o nieskończonej odpowiedzi impulsowej) ma 2 zera sprzężone: <img src=\"http://latex.codecogs.com/png.latex?%20z%3D%5Cpm%20j%5Ccdot%201\">. Dla jakiej pary sprzężonych biegunów taki filtr będzie stabilny?  ",
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20p%3D2%5Cpm%20j%5Ccdot%200.5\"> ", "valid": false},
@@ -552,11 +553,11 @@ var test = {
             "question": "Poziomą osią wykresu modułu transmitancji jest oś: ",
             "tip": "",
             "answer": [
-                {"text": "warto&#347;ci chwilowej", "valid": false},
+                {"text": "wartości chwilowej", "valid": false},
                 {"text": "amplitudy", "valid": false},
                 {"text": "czasu", "valid": false},
-                {"text": "cz&#281;stotliwo&#347;ci", "valid": true},
-                {"text": "przesuni&#281;cia", "valid": false},
+                {"text": "częstotliwości", "valid": true},
+                {"text": "przesunięcia", "valid": false},
             ]
         },
         {
@@ -564,7 +565,7 @@ var test = {
             "tip": "",
             "answer": [
                 {"text": "fazy", "valid": false},
-                {"text": "z kluczowaniem cz&#281;stotliwo&#347;ci", "valid": true},
+                {"text": "z kluczowaniem częstotliwości", "valid": true},
                 {"text": "z kluczowaniem fazy", "valid": false},
                 {"text": "amplitudy", "valid": false},
                 {"text": "z kluczowaniem amplitudy", "valid": false},
@@ -585,54 +586,54 @@ var test = {
             "question": "Odpowiedź impulsowa opisuje: ",
             "tip": "",
             "answer": [
-                {"text": "odpowied&#378; systemu na impuls Gibs'a", "valid": false},
-                {"text": "odpowied&#378; systemu na impuls Kronecker'a", "valid": true},
-                {"text": "odpowied&#378; systemu na sygna&#322; sinusoidalny o zadanej cz&#281;stotliwo&#347;ci", "valid": false},
-                {"text": "odpowied&#378; systemu na funkcj&#281; grzebieniow&#261;", "valid": false},
-                {"text": "odpowied&#378; systemu na skok jednostkowy", "valid": false},
-                {"text": "odpowied&#378; systemu na impuls Dirac'a", "valid": true},
+                {"text": "odpowiedź systemu na impuls Gibs'a", "valid": false},
+                {"text": "odpowiedź systemu na impuls Kronecker'a", "valid": true},
+                {"text": "odpowiedź systemu na sygnał sinusoidalny o zadanej częstotliwości", "valid": false},
+                {"text": "odpowiedź systemu na funkcję grzebieniową", "valid": false},
+                {"text": "odpowiedź systemu na skok jednostkowy", "valid": false},
+                {"text": "odpowiedź systemu na impuls Dirac'a", "valid": true},
             ]
         },
         {
             "question": "Proces jest całkowicie określony, jeśli: ",
             "tip": "",
             "answer": [
-                {"text": "znane s&#261; dystrubuanty dowolnego rz&#281;du", "valid": true},
-                {"text": "znane s&#261; statystyki niesko&#324;czonego rz&#281;du", "valid": false},
-                {"text": "znane s&#261; statystyki dowolnego rz&#281;du", "valid": true},
-                {"text": "znane s&#261; rozk&#322;ady prawdopodobie&#324;stwa dowolnego rz&#281;du", "valid": true},
+                {"text": "znane są dystrubuanty dowolnego rzędu", "valid": true},
+                {"text": "znane są statystyki nieskończonego rzędu", "valid": false},
+                {"text": "znane są statystyki dowolnego rzędu", "valid": true},
+                {"text": "znane są rozkłady prawdopodobieństwa dowolnego rzędu", "valid": true},
             ]
         },
         {
             "question": "Wrażliwość struktury filtru cyfrowego opisuje ",
             "tip": "",
             "answer": [
-                {"text": "wra&#380;liwo&#347;&#263; struktury na b&#322;&#281;dy kwantowania przetwarzanych sygna&#322;&#243;w", "valid": false},
-                {"text": "wra&#380;liwo&#347;&#263; struktury na przeprojektowywanie filtru", "valid": false},
-                {"text": "wp&#322;yw b&#322;&#281;d&#243;w zaokr&#261;gle&#324; na jako&#347;&#263; filtracji", "valid": true},
-                {"text": "wra&#380;liwo&#347;&#263; struktury na b&#322;&#281;dy pope&#322;nione na etapie projektowania", "valid": false},
+                {"text": "wrażliwość struktury na błędy kwantowania przetwarzanych sygnałów", "valid": false},
+                {"text": "wrażliwość struktury na przeprojektowywanie filtru", "valid": false},
+                {"text": "wpływ błędów zaokrągleń na jakość filtracji", "valid": true},
+                {"text": "wrażliwość struktury na błędy popełnione na etapie projektowania", "valid": false},
             ]
         },
         {
             "question": "W definicji <img src=\"http://latex.codecogs.com/png.latex?%20%20m%28t%29%20%3D%20E%20%5C%7B%20x%28t%29%20%5C%7D%20\"> symbol <img src=\"http://latex.codecogs.com/png.latex?%20%20E%20\"> oznacza:  ",
             "tip": "",
             "answer": [
-                {"text": "warto&#347;&#263; oczekiwan&#261; ", "valid": true},
-                {"text": "prawdopodobie&#324;stwo", "valid": false},
-                {"text": "&#347;redni&#261; arytmetyczn&#261;", "valid": false},
-                {"text": "&#347;redni&#261; geometryczn&#261;", "valid": false},
+                {"text": "wartość oczekiwaną ", "valid": true},
+                {"text": "prawdopodobieństwo", "valid": false},
+                {"text": "średnią arytmetyczną", "valid": false},
+                {"text": "średnią geometryczną", "valid": false},
             ]
         },
         {
-            "question": "Zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20P%20%5C%7B%20x%28t_1%29%20%5Cleq%20x_1%2C%20x%28t_2%29%20%5Cleq%20x_2%20%5C%7D%20\"> jest definicj&#261;:  ",
+            "question": "Zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20P%20%5C%7B%20x%28t_1%29%20%5Cleq%20x_1%2C%20x%28t_2%29%20%5Cleq%20x_2%20%5C%7D%20\"> jest definicją:  ",
             "tip": "",
             "answer": [
-                {"text": "g&#281;sto&#347;ci prawdopodobie&#324;stwa 2. rz&#281;du", "valid": false},
-                {"text": "rozk&#322;adu prawdopodobie&#324;stwa 2. rz&#281;du", "valid": false},
-                {"text": "dystrybuanty 1. rz&#281;du", "valid": false},
-                {"text": "rozk&#322;adu prawdopodobie&#324;stwa 1. rz&#281;du", "valid": false},
-                {"text": "g&#281;sto&#347;ci prawdopodobie&#324;stwa 1. rz&#281;du", "valid": false},
-                {"text": "dystrybuanty 2. rz&#281;du", "valid": true},
+                {"text": "gęstości prawdopodobieństwa 2. rzędu", "valid": false},
+                {"text": "rozkładu prawdopodobieństwa 2. rzędu", "valid": false},
+                {"text": "dystrybuanty 1. rzędu", "valid": false},
+                {"text": "rozkładu prawdopodobieństwa 1. rzędu", "valid": false},
+                {"text": "gęstości prawdopodobieństwa 1. rzędu", "valid": false},
+                {"text": "dystrybuanty 2. rzędu", "valid": true},
             ]
         },
         {
@@ -640,18 +641,18 @@ var test = {
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> jest czasem trwania symbolu ", "valid": false},
-                {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20T%20%5Cover%20m%20\"> gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> jest czasem trwania symbolu a <img src=\"http://latex.codecogs.com/png.latex?%20%20m%20\"> jest liczb&#261; bit&#243;w zajmowanych przez symbol ", "valid": false},
+                {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20T%20%5Cover%20m%20\"> gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> jest czasem trwania symbolu a <img src=\"http://latex.codecogs.com/png.latex?%20%20m%20\"> jest liczbą bitów zajmowanych przez symbol ", "valid": false},
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%201%20%5Cover%20T%20\"> gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> jest czasem trwania symbolu ", "valid": true},
-                {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20m%20%5Cover%20T%20\"> gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> jest czasem trwania symbolu a <img src=\"http://latex.codecogs.com/png.latex?%20%20m%20\"> jest liczb&#261; bit&#243;w przypadaj&#261;cych na symbol ", "valid": false},
+                {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20m%20%5Cover%20T%20\"> gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> jest czasem trwania symbolu a <img src=\"http://latex.codecogs.com/png.latex?%20%20m%20\"> jest liczbą bitów przypadających na symbol ", "valid": false},
             ]
         },
         {
             "question": "Wartość funkcji autokowariancji w zerze określa jednocześnie: ",
             "tip": "",
             "answer": [
-                {"text": "wariancj&#281; procesu", "valid": true},
-                {"text": "warto&#347;&#263; &#347;redniokwadratow&#261; procesu", "valid": false},
-                {"text": "energi&#281; procesu", "valid": false},
+                {"text": "wariancję procesu", "valid": true},
+                {"text": "wartość średniokwadratową procesu", "valid": false},
+                {"text": "energię procesu", "valid": false},
                 {"text": "moc procesu", "valid": false},
             ]
         },
@@ -659,21 +660,21 @@ var test = {
             "question": "Transformacja dwuliniowa pozwala na przeliczenie ",
             "tip": "",
             "answer": [
-                {"text": "po&#322;o&#380;enia zer i biegun&#243;w filtru dolnoprzepustowego na dowolny inny", "valid": false},
-                {"text": "po&#322;o&#380;enia zer i biegun&#243;w z p&#322;aszczyzny \"s\" na p&#322;aszczyzn&#281; \"z\"", "valid": true},
-                {"text": "po&#322;o&#380;enia zer i biegun&#243;w z p&#322;aszczyzny \"z\" na p&#322;aszczyzn&#281; \"s\"", "valid": false},
-                {"text": "po&#322;o&#380;enia zer i biegun&#243;w filtru pasmowoprzepustowego na filtr pasmowozaporowy", "valid": false},
+                {"text": "położenia zer i biegunów filtru dolnoprzepustowego na dowolny inny", "valid": false},
+                {"text": "położenia zer i biegunów z płaszczyzny \"s\" na płaszczyznę \"z\"", "valid": true},
+                {"text": "położenia zer i biegunów z płaszczyzny \"z\" na płaszczyznę \"s\"", "valid": false},
+                {"text": "położenia zer i biegunów filtru pasmowoprzepustowego na filtr pasmowozaporowy", "valid": false},
             ]
         },
         {
             "question": "Ergodyczność procesu pozwala na ",
             "tip": "",
             "answer": [
-                {"text": "estymacj&#281; statystyk na podstawie sko&#324;czonego zbioru pr&#243;bek jednej z realizacji", "valid": true},
-                {"text": "zast&#261;pienie u&#347;redniania po czasie u&#347;rednianiem po zbiorze", "valid": false},
+                {"text": "estymację statystyk na podstawie skończonego zbioru próbek jednej z realizacji", "valid": true},
+                {"text": "zastąpienie uśredniania po czasie uśrednianiem po zbiorze", "valid": false},
                 {"text": "wyznaczenie statystyk procesu na podstawie jednej realizacji ", "valid": true},
                 {"text": "wyznaczenie statystyk procesu z przekroju po czasie", "valid": false},
-                {"text": "zast&#261;pienie u&#347;redniania po zbiorze u&#347;rednianiem po czasie", "valid": true},
+                {"text": "zastąpienie uśredniania po zbiorze uśrednianiem po czasie", "valid": true},
             ]
         },
         {
@@ -700,20 +701,20 @@ var test = {
             "question": "Realizacją procesu nazywamy: ",
             "tip": "",
             "answer": [
-                {"text": "pojedyncz&#261; funkcj&#281; b&#281;d&#261;c&#261; wynikiem losowania", "valid": true},
-                {"text": "opisanie procesu za pomoc&#261; statystyk", "valid": false},
-                {"text": "przekr&#243;j procesu dla ustalonego wyniku losowania", "valid": false},
-                {"text": "zbiorem wszystkich funkcji, kt&#243;re sk&#322;adaj&#261; si&#281; na proces", "valid": false},
+                {"text": "pojedynczą funkcję będącą wynikiem losowania", "valid": true},
+                {"text": "opisanie procesu za pomocą statystyk", "valid": false},
+                {"text": "przekrój procesu dla ustalonego wyniku losowania", "valid": false},
+                {"text": "zbiorem wszystkich funkcji, które składają się na proces", "valid": false},
             ]
         },
         {
             "question": "Od czego zależy liczba poziomów kwantyzacji przy przetwarzaniu analogowo-cyfrowym ? ",
             "tip": "",
             "answer": [
-                {"text": "od liczby pr&#243;bek sygna&#322;u", "valid": false},
+                {"text": "od liczby próbek sygnału", "valid": false},
                 {"text": "od szumu kwantyzacji", "valid": false},
-                {"text": "od d&#322;ugo&#347;ci s&#322;owa binarnego przetwornika", "valid": true},
-                {"text": "od cz&#281;stotliwo&#347;ci pr&#243;bkowania", "valid": false},
+                {"text": "od długości słowa binarnego przetwornika", "valid": true},
+                {"text": "od częstotliwości próbkowania", "valid": false},
             ]
         },
         {
@@ -744,11 +745,11 @@ var test = {
             "question": "Transformacja dwuliniowa wykorzystywana jest do projektowania filtrów cyfrowych ",
             "tip": "",
             "answer": [
-                {"text": "o niesko&#324;czonej d&#322;ugo&#347;ci impulsowej", "valid": true},
+                {"text": "o nieskończonej długości impulsowej", "valid": true},
                 {"text": "kratowych", "valid": false},
                 {"text": "eliptycznych", "valid": true},
-                {"text": "o sko&#324;czonej d&#322;ugo&#347;ci odpowiedzi impulsowej", "valid": false},
-                {"text": "na podstawie filtr&#243;w analogowych", "valid": true},
+                {"text": "o skończonej długości odpowiedzi impulsowej", "valid": false},
+                {"text": "na podstawie filtrów analogowych", "valid": true},
                 {"text": "Butterworth'a", "valid": true},
             ]
         },
@@ -756,14 +757,14 @@ var test = {
             "question": "W definicji <img src=\"http://latex.codecogs.com/png.latex?%20%20F%28x%2Ct%29%20%3D%20P%20%5C%7Bx%28t%29%20%5Cleq%20x%5C%7D%20\">, <img src=\"http://latex.codecogs.com/png.latex?%20%20P%20\"> oznacza:  ",
             "tip": "",
             "answer": [
-                {"text": "pochodn&#261;", "valid": false},
-                {"text": "g&#281;sto&#347;&#263; prawdopodobie&#324;stwa", "valid": false},
-                {"text": "funkcj&#281;", "valid": false},
-                {"text": "prawdopodobie&#324;stwo", "valid": true},
+                {"text": "pochodną", "valid": false},
+                {"text": "gęstość prawdopodobieństwa", "valid": false},
+                {"text": "funkcję", "valid": false},
+                {"text": "prawdopodobieństwo", "valid": true},
             ]
         },
         {
-            "question": "Równoległe połączenie dwóch liniowych układów niezmiennych w czasie, o odpowiedziach impulsowych <img src=\"http://latex.codecogs.com/png.latex?%20h_1%20%28n%20%29%20\"> i <img src=\"http://latex.codecogs.com/png.latex?%20h_2%20%28n%20%29\">, ma &#322;&#261;czn&#261; odpowied&#378; impulsow&#261;  ",
+            "question": "Równoległe połączenie dwóch liniowych układów niezmiennych w czasie, o odpowiedziach impulsowych <img src=\"http://latex.codecogs.com/png.latex?%20h_1%20%28n%20%29%20\"> i <img src=\"http://latex.codecogs.com/png.latex?%20h_2%20%28n%20%29\">, ma łączną odpowiedź impulsową  ",
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20h%20%28n%20%29%3Dh_1%20%28n%20%29%5Ccdot%20h_2%20%28n%20%29\"> ", "valid": false},
@@ -787,22 +788,22 @@ var test = {
             "question": "Gęstość prawdopodobieństwa <img src=\"http://latex.codecogs.com/png.latex?%20%20f%28x_1%2C%20x_2%2C%20t_1%2C%20t_2%29%20\"> jest definiowana jako:  ",
             "tip": "",
             "answer": [
-                {"text": "pochodna dystrybuanty 1-go rz&#281;du", "valid": false},
-                {"text": "druga pochodna cz&#261;stkowa dystrybuanty 1-go rz&#281;du", "valid": false},
-                {"text": "pochodna cz&#261;stkowa dystrybuanty 2-go rz&#281;du", "valid": false},
-                {"text": "druga pochodna cz&#261;stkowa dystrybuanty 2-go rz&#281;du", "valid": true},
+                {"text": "pochodna dystrybuanty 1-go rzędu", "valid": false},
+                {"text": "druga pochodna cząstkowa dystrybuanty 1-go rzędu", "valid": false},
+                {"text": "pochodna cząstkowa dystrybuanty 2-go rzędu", "valid": false},
+                {"text": "druga pochodna cząstkowa dystrybuanty 2-go rzędu", "valid": true},
             ]
         },
         {
             "question": "Struktury filtrów cyfrowych różnią się ",
             "tip": "",
             "answer": [
-                {"text": "liczb&#261; zer i biegun&#243;w", "valid": false},
-                {"text": "liczba element&#243;w mno&#380;&#261;cych", "valid": true},
-                {"text": "wra&#380;liwo&#347;ci&#261; na b&#322;&#281;dy zaokr&#261;gle&#324; wsp&#243;&#322;czynnik&#243;w filtru", "valid": true},
-                {"text": "liczba element&#243;w op&#243;&#378;niaj&#261;cych", "valid": true},
-                {"text": "liczb&#261; element&#243;w sumuj&#261;cych", "valid": true},
-                {"text": "wra&#380;liwo&#347;ci&#261; na b&#322;&#281;dy kwantowania ", "valid": false},
+                {"text": "liczbą zer i biegunów", "valid": false},
+                {"text": "liczba elementów mnożących", "valid": true},
+                {"text": "wrażliwością na błędy zaokrągleń współczynników filtru", "valid": true},
+                {"text": "liczba elementów opóźniających", "valid": true},
+                {"text": "liczbą elementów sumujących", "valid": true},
+                {"text": "wrażliwością na błędy kwantowania ", "valid": false},
             ]
         },
         {
@@ -820,10 +821,10 @@ var test = {
             "question": "Dla systemu inercyjnego przyczynowego ",
             "tip": "",
             "answer": [
-                {"text": "jego odpowied&#378; zale&#380;y od aktualnej warto&#347;ci pobudzenia", "valid": false},
-                {"text": "jego odpowied&#378; zale&#380;y od poprzednich w czasie warto&#347;ci pobudzenia", "valid": false},
-                {"text": "jego odpowied&#378; jest minimalnofazowa", "valid": false},
-                {"text": "jego odpowied&#378; zale&#380;y od aktualnej i poprzednich w czasie warto&#347;ci pobudzenia", "valid": true},
+                {"text": "jego odpowiedź zależy od aktualnej wartości pobudzenia", "valid": false},
+                {"text": "jego odpowiedź zależy od poprzednich w czasie wartości pobudzenia", "valid": false},
+                {"text": "jego odpowiedź jest minimalnofazowa", "valid": false},
+                {"text": "jego odpowiedź zależy od aktualnej i poprzednich w czasie wartości pobudzenia", "valid": true},
             ]
         },
         {
@@ -832,51 +833,51 @@ var test = {
             "answer": [
                 {"text": "amplitudy", "valid": false},
                 {"text": "czasu", "valid": false},
-                {"text": "przesuni&#281;cia", "valid": false},
-                {"text": "cz&#281;stotliwo&#347;ci", "valid": false},
-                {"text": "warto&#347;ci chwilowej", "valid": true},
+                {"text": "przesunięcia", "valid": false},
+                {"text": "częstotliwości", "valid": false},
+                {"text": "wartości chwilowej", "valid": true},
             ]
         },
         {
             "question": "Filtracja innowacyjna nazywana jest czasem liniową predykcją, gdyż: ",
             "tip": "",
             "answer": [
-                {"text": "jest to proces przewidywania (predykcji) liniowego sygna&#322;u b&#322;&#281;du", "valid": false},
-                {"text": "jest to proces przewidywania (predykcji) sygna&#322;u b&#322;&#281;du", "valid": false},
-                {"text": "przesz&#322;e pr&#243;bki sygna&#322;u przekszta&#322;cane s&#261; na liniowy sygna&#322; wyj&#347;ciowy", "valid": false},
-                {"text": "przesz&#322;e pr&#243;bki sygna&#322;u przekszta&#322;cane s&#261; operatorem liniowym", "valid": true},
-                {"text": "estymator bie&#380;&#261;cej pr&#243;bki wyznaczany jest przez liniow&#261; kombinacj&#281; pr&#243;bek przesz&#322;ych sygna&#322;u", "valid": true},
+                {"text": "jest to proces przewidywania (predykcji) liniowego sygnału błędu", "valid": false},
+                {"text": "jest to proces przewidywania (predykcji) sygnału błędu", "valid": false},
+                {"text": "przeszłe próbki sygnału przekształcane są na liniowy sygnał wyjściowy", "valid": false},
+                {"text": "przeszłe próbki sygnału przekształcane są operatorem liniowym", "valid": true},
+                {"text": "estymator bieżącej próbki wyznaczany jest przez liniową kombinację próbek przeszłych sygnału", "valid": true},
             ]
         },
         {
             "question": "Uklad Youle'a-Walkera nazywamy inaczej ukladem ",
             "tip": "",
             "answer": [
-                {"text": "normalnym r&#243;wna&#324;", "valid": true},
-                {"text": "uzupe&#322;nionym r&#243;wna&#324;", "valid": false},
-                {"text": "nieodwracalnym r&#243;wna&#324;", "valid": false},
-                {"text": "pe&#322;nym r&#243;wna&#324;", "valid": false},
+                {"text": "normalnym równań", "valid": true},
+                {"text": "uzupełnionym równań", "valid": false},
+                {"text": "nieodwracalnym równań", "valid": false},
+                {"text": "pełnym równań", "valid": false},
             ]
         },
         {
             "question": "Pojęcie cyklostacjonarności dotyczy: ",
             "tip": "",
             "answer": [
-                {"text": "sygna&#322;&#243;w medycznych", "valid": false},
-                {"text": "sygna&#322;&#243;w ergodycznych", "valid": false},
-                {"text": "dowolnych sygna&#322;&#243;w telekomunikacyjnych", "valid": false},
-                {"text": "sygna&#322;&#243;w akustycznych", "valid": false},
-                {"text": "sygna&#322;&#243;w telekomunikacji cyfrowej", "valid": true},
-                {"text": "dowolnych sygna&#322;&#243;w wolnozmiennych", "valid": false},
+                {"text": "sygnałów medycznych", "valid": false},
+                {"text": "sygnałów ergodycznych", "valid": false},
+                {"text": "dowolnych sygnałów telekomunikacyjnych", "valid": false},
+                {"text": "sygnałów akustycznych", "valid": false},
+                {"text": "sygnałów telekomunikacji cyfrowej", "valid": true},
+                {"text": "dowolnych sygnałów wolnozmiennych", "valid": false},
             ]
         },
         {
             "question": "Zmienną niezależną widma amplitudowego jest: ",
             "tip": "",
             "answer": [
-                {"text": "warto&#347;&#263; chwilowa", "valid": false},
-                {"text": "cz&#281;stotliwo&#347;&#263;", "valid": true},
-                {"text": "przesuni&#281;cie", "valid": false},
+                {"text": "wartość chwilowa", "valid": false},
+                {"text": "częstotliwość", "valid": true},
+                {"text": "przesunięcie", "valid": false},
                 {"text": "czas", "valid": false},
                 {"text": "amplituda", "valid": false},
             ]
@@ -885,10 +886,10 @@ var test = {
             "question": "Decymacja to proces ",
             "tip": "",
             "answer": [
-                {"text": "zmniejszania warto&#347;ci pr&#243;bek", "valid": false},
-                {"text": "zwi&#281;kszania warto&#347;ci pr&#243;bek", "valid": false},
-                {"text": "zmniejszania cz&#281;stotliwo&#347;ci pr&#243;bkowania", "valid": true},
-                {"text": "zwi&#281;kszania cz&#281;stotliwo&#347;ci pr&#243;bkowania", "valid": false},
+                {"text": "zmniejszania wartości próbek", "valid": false},
+                {"text": "zwiększania wartości próbek", "valid": false},
+                {"text": "zmniejszania częstotliwości próbkowania", "valid": true},
+                {"text": "zwiększania częstotliwości próbkowania", "valid": false},
             ]
         },
         {
@@ -896,13 +897,13 @@ var test = {
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> jest czasem trwania symbolu ", "valid": false},
-                {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20m%20%5Cover%20T%20\"> gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> jest czasem trwania symbolu a <img src=\"http://latex.codecogs.com/png.latex?%20%20m%20\"> jest liczb&#261; bit&#243;w zajmowanych przez symbol ", "valid": true},
+                {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20m%20%5Cover%20T%20\"> gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> jest czasem trwania symbolu a <img src=\"http://latex.codecogs.com/png.latex?%20%20m%20\"> jest liczbą bitów zajmowanych przez symbol ", "valid": true},
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%201%20%5Cover%20T%20\"> gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> jest czasem trwania symbolu  ", "valid": false},
-                {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20T%20%5Cover%20m%20\"> gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> jest czasem trwania symbolu a <img src=\"http://latex.codecogs.com/png.latex?%20%20m%20\"> jest liczb&#261; bit&#243;w zajmowanych przez symbol ", "valid": false},
+                {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20T%20%5Cover%20m%20\"> gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> jest czasem trwania symbolu a <img src=\"http://latex.codecogs.com/png.latex?%20%20m%20\"> jest liczbą bitów zajmowanych przez symbol ", "valid": false},
             ]
         },
         {
-            "question": "Jaka jest rozdzielczość widma (odległość pomiędzy dwoma sąsiednimi prążkami widma) (<img src=\"http://latex.codecogs.com/png.latex?%20N\"> -- liczba pr&#243;bek sygna&#322;u poddawanego DFT, <img src=\"http://latex.codecogs.com/png.latex?%20f_s\"> -- cz&#281;stotliwo&#347;&#263; pr&#243;bkowania)  ",
+            "question": "Jaka jest rozdzielczość widma (odległość pomiędzy dwoma sąsiednimi prążkami widma) (<img src=\"http://latex.codecogs.com/png.latex?%20N\"> -- liczba próbek sygnału poddawanego DFT, <img src=\"http://latex.codecogs.com/png.latex?%20f_s\"> -- częstotliwość próbkowania)  ",
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20f_s%2FN\"> ", "valid": true},
@@ -915,11 +916,11 @@ var test = {
             "question": "Zmienną niezależną modułu transmitancji jest: ",
             "tip": "",
             "answer": [
-                {"text": "przesuni&#281;cie", "valid": false},
-                {"text": "cz&#281;stotliwo&#347;&#263;", "valid": true},
+                {"text": "przesunięcie", "valid": false},
+                {"text": "częstotliwość", "valid": true},
                 {"text": "czas", "valid": false},
                 {"text": "amplituda", "valid": false},
-                {"text": "warto&#347;&#263; chwilowa", "valid": false},
+                {"text": "wartość chwilowa", "valid": false},
             ]
         },
         {
@@ -927,14 +928,14 @@ var test = {
             "tip": "",
             "answer": [
                 {"text": "czasu", "valid": false},
-                {"text": "warto&#347;ci chwilowej", "valid": false},
+                {"text": "wartości chwilowej", "valid": false},
                 {"text": "amplitudy", "valid": false},
-                {"text": "przesuni&#281;cia", "valid": false},
-                {"text": "cz&#281;stotliwo&#347;ci", "valid": true},
+                {"text": "przesunięcia", "valid": false},
+                {"text": "częstotliwości", "valid": true},
             ]
         },
         {
-            "question": "W jakiej metodzie identyfikacji systemu moduł funkcji transmitancji wyznaczany jest z zależności <img src=\"http://latex.codecogs.com/png.latex?%20%20%7C%5Chat%20H%28f%29%7C%20%3D%20%5Csqrt%20%7B%7B%7B%5Chat%20S_%7Byy%7D%28f%29%7D%20%5Cover%20%7B%5Chat%20S_%7Bxx%7D%28f%29%7D%7D%7D%20\">, gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20S%20\"> oznacza widmow&#261; g&#281;sto&#347;&#263; mocy  ",
+            "question": "W jakiej metodzie identyfikacji systemu moduł funkcji transmitancji wyznaczany jest z zależności <img src=\"http://latex.codecogs.com/png.latex?%20%20%7C%5Chat%20H%28f%29%7C%20%3D%20%5Csqrt%20%7B%7B%7B%5Chat%20S_%7Byy%7D%28f%29%7D%20%5Cover%20%7B%5Chat%20S_%7Bxx%7D%28f%29%7D%7D%7D%20\">, gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20S%20\"> oznacza widmową gęstość mocy  ",
             "tip": "",
             "answer": [
                 {"text": "impulsowej", "valid": false},
@@ -957,15 +958,15 @@ var test = {
             "question": "Filtry typu IIR (o nieskończonej długości odpowiedzi impulsowej) ",
             "tip": "",
             "answer": [
-                {"text": "posiadaj&#261; bieguny", "valid": true},
-                {"text": "nie posiadaj&#261; zer", "valid": false},
-                {"text": "mog&#261; by&#263; niestabilne", "valid": true},
-                {"text": "nie posiadaj&#261; biegun&#243;w", "valid": false},
-                {"text": "s&#261; zawsze stabilne", "valid": false},
+                {"text": "posiadają bieguny", "valid": true},
+                {"text": "nie posiadają zer", "valid": false},
+                {"text": "mogą być niestabilne", "valid": true},
+                {"text": "nie posiadają biegunów", "valid": false},
+                {"text": "są zawsze stabilne", "valid": false},
             ]
         },
         {
-            "question": "Jeśli <img src=\"http://latex.codecogs.com/png.latex?%20%20t%20\"> oznacza czas dyskretny, to definicja transformaty Z ma posta&#263;  ",
+            "question": "Jeśli <img src=\"http://latex.codecogs.com/png.latex?%20%20t%20\"> oznacza czas dyskretny, to definicja transformaty Z ma postać  ",
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20%5Csum_%7Bt%3D-%5Cinfty%7D%5E%7B%5Cinfty%7D%20x%28t%29%20z%5E%7B-t%7D%20\"> ", "valid": true},
@@ -1000,7 +1001,7 @@ var test = {
             "answer": [
                 {"text": "wyniki losowania", "valid": true},
                 {"text": "realizacje", "valid": false},
-                {"text": "prawdopodobie&#324;stwa zdarze&#324;", "valid": false},
+                {"text": "prawdopodobieństwa zdarzeń", "valid": false},
                 {"text": "dystrybuanty", "valid": false},
             ]
         },
@@ -1008,33 +1009,33 @@ var test = {
             "question": "Modulacje cyfrowe różnią się od modulacji analogowych tym, że ",
             "tip": "",
             "answer": [
-                {"text": "przez kana&#322; telekomunikacyjny przesy&#322;any jest sygna&#322; cyfrowy", "valid": false},
-                {"text": "przez kana&#322; telekomunikacyjny przesy&#322;any jest  sygna&#322; dyskretny", "valid": false},
-                {"text": "sygna&#322; moduluj&#261;cy jest sygna&#322;em cyfrowym", "valid": true},
-                {"text": "sygna&#322; modulowany jest sygna&#322;em cyfrowym", "valid": false},
-                {"text": "sygna&#322; przesy&#322;any jest przez kana&#322; cyfrowy", "valid": false},
+                {"text": "przez kanał telekomunikacyjny przesyłany jest sygnał cyfrowy", "valid": false},
+                {"text": "przez kanał telekomunikacyjny przesyłany jest  sygnał dyskretny", "valid": false},
+                {"text": "sygnał modulujący jest sygnałem cyfrowym", "valid": true},
+                {"text": "sygnał modulowany jest sygnałem cyfrowym", "valid": false},
+                {"text": "sygnał przesyłany jest przez kanał cyfrowy", "valid": false},
             ]
         },
         {
             "question": "Modulacja QAM charakteryzuje się ",
             "tip": "",
             "answer": [
-                {"text": "jednoczesnym kluczowaniem amplitudy i cz&#281;stotliwo&#347;ci", "valid": false},
-                {"text": "jednoczesnym kluczowaniem cz&#261;stotliwo&#347;ci i fazy", "valid": false},
+                {"text": "jednoczesnym kluczowaniem amplitudy i częstotliwości", "valid": false},
+                {"text": "jednoczesnym kluczowaniem cząstotliwości i fazy", "valid": false},
                 {"text": "jednoczesnym kluczowaniem amplitudy i fazy", "valid": true},
                 {"text": "kluczowaniem fazy", "valid": false},
                 {"text": "kluczowaniem amplitudy", "valid": false},
-                {"text": "kluczowaniem cz&#261;stotliwo&#347;ci", "valid": false},
+                {"text": "kluczowaniem cząstotliwości", "valid": false},
             ]
         },
         {
             "question": "Wariancja estymatora opisuje ",
             "tip": "",
             "answer": [
-                {"text": "rozrzut wynik&#243;w wok&#243;&#322; wariancji", "valid": false},
-                {"text": "rozrzut wynik&#243;w wok&#243;&#322; warto&#347;ci dok&#322;adnej estymowanej wielko&#347;ci", "valid": false},
-                {"text": "rozrzut wynik&#243;w wok&#243;&#322; warto&#347;ci &#347;redniej estymatora", "valid": true},
-                {"text": "systematyczn&#261; niezgodno&#347;&#263; uzyskiwanych wynik&#243;w z dok&#322;adn&#261; estymowan&#261; warto&#347;ci&#261;", "valid": false},
+                {"text": "rozrzut wyników wokół wariancji", "valid": false},
+                {"text": "rozrzut wyników wokół wartości dokładnej estymowanej wielkości", "valid": false},
+                {"text": "rozrzut wyników wokół wartości średniej estymatora", "valid": true},
+                {"text": "systematyczną niezgodność uzyskiwanych wyników z dokładną estymowaną wartością", "valid": false},
             ]
         },
         {
@@ -1052,7 +1053,7 @@ var test = {
             "question": "Które z poniższych właściwości są słuszne dla widmowej gęstości mocy procesu stacjonarnego: ",
             "tip": "",
             "answer": [
-                {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20S%28f%29%20\"> jest dodatnio okre&#347;lona ", "valid": false},
+                {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20S%28f%29%20\"> jest dodatnio określona ", "valid": false},
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20S%28f%29%20%5Cgeq%200%20%20\"> ", "valid": true},
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20S%28f%29%20\"> jest zespolona ", "valid": false},
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20S%28f%29%20\"> ma maksimum w zerze ", "valid": false},
@@ -1064,11 +1065,11 @@ var test = {
             "question": "Opracowanie szybkiej transformacji Fouriera bazuje na następujących właściwościach funkcji bazowych ",
             "tip": "",
             "answer": [
-                {"text": "parzysto&#347;&#263; funkcji cosinus", "valid": true},
-                {"text": "okresowo&#347;&#263;", "valid": true},
-                {"text": "rzeczywisto&#347;&#263; funkcji bazowych", "valid": false},
-                {"text": "nieparzysto&#347;&#263; funkcji sinus", "valid": true},
-                {"text": "ograniczono&#347;&#263; funkcji bazowych w czasie", "valid": false},
+                {"text": "parzystość funkcji cosinus", "valid": true},
+                {"text": "okresowość", "valid": true},
+                {"text": "rzeczywistość funkcji bazowych", "valid": false},
+                {"text": "nieparzystość funkcji sinus", "valid": true},
+                {"text": "ograniczoność funkcji bazowych w czasie", "valid": false},
             ]
         },
         {
@@ -1085,19 +1086,19 @@ var test = {
             "question": "Okienkowanie sygnału (nakładanie funkcji okna) przed poddaniem go transformacji Fouriera stosuje się, aby ",
             "tip": "",
             "answer": [
-                {"text": "zmniejszy&#263; przeciek widma", "valid": true},
-                {"text": "zwi&#281;kszy&#263; cz&#281;stotliwo&#347;&#263; pr&#243;bkowania", "valid": false},
-                {"text": "usun&#261;&#263; szum zak&#322;&#243;caj&#261;cy", "valid": false},
-                {"text": "usun&#261;&#263; sk&#322;adow&#261; sta&#322;&#261;", "valid": false},
+                {"text": "zmniejszyć przeciek widma", "valid": true},
+                {"text": "zwiększyć częstotliwość próbkowania", "valid": false},
+                {"text": "usunąć szum zakłócający", "valid": false},
+                {"text": "usunąć składową stałą", "valid": false},
             ]
         },
         {
             "question": "Prawdziwe jest stwierdzenie: ",
             "tip": "",
             "answer": [
-                {"text": "odpowied&#378; impulsowa jest transformat&#261; Fouriera z funkcji transmitancji", "valid": false},
-                {"text": "odpowied&#378; impulsowa jest odwrotn&#261; transformat&#261; Fouriera funkcji transmitancji", "valid": true},
-                {"text": "funkcja transmitancji jest odwrotn&#261; transformat&#261; Fouriera z odpowiedzi impulsowej", "valid": false},
+                {"text": "odpowiedź impulsowa jest transformatą Fouriera z funkcji transmitancji", "valid": false},
+                {"text": "odpowiedź impulsowa jest odwrotną transformatą Fouriera funkcji transmitancji", "valid": true},
+                {"text": "funkcja transmitancji jest odwrotną transformatą Fouriera z odpowiedzi impulsowej", "valid": false},
                 {"text": "funkcja transmitancji jest transformata Fouriera z odpowiedzi impulsowej", "valid": true},
             ]
         },
@@ -1105,10 +1106,10 @@ var test = {
             "question": "W definicji procesu stochastycznego wynikowi losowania przypisuje się: ",
             "tip": "",
             "answer": [
-                {"text": "liczb&#281; rzeczywist&#261; lub zespolon&#261;", "valid": false},
-                {"text": "rzeczywist&#261; lub zespolon&#261; funkcj&#281; czasu", "valid": true},
-                {"text": "prawdopodobie&#324;stwo", "valid": false},
-                {"text": "rozk&#322;ad prawdopodobie&#324;stwa", "valid": false},
+                {"text": "liczbę rzeczywistą lub zespoloną", "valid": false},
+                {"text": "rzeczywistą lub zespoloną funkcję czasu", "valid": true},
+                {"text": "prawdopodobieństwo", "valid": false},
+                {"text": "rozkład prawdopodobieństwa", "valid": false},
             ]
         },
         {
@@ -1137,14 +1138,14 @@ var test = {
             "question": "Metody parametryczne różnią się od metod nieparametrycznych estymacji widmowej gęstości mocy tym, że ",
             "tip": "",
             "answer": [
-                {"text": "przyjmowany jest model sygna&#322;u", "valid": true},
-                {"text": "widmowa g&#281;sto&#347;&#263; mocy zale&#380;y od parametr&#243;w estymacji", "valid": false},
-                {"text": "zak&#322;adana jest warto&#347;&#263; pewnych niezmiennik&#243;w widmowej g&#281;sto&#347;ci mocy", "valid": false},
-                {"text": "jeste&#347;my w stanie wyestymowa&#263; jedynie pewne parametry widmowej g&#281;sto&#347;ci mocy", "valid": false},
+                {"text": "przyjmowany jest model sygnału", "valid": true},
+                {"text": "widmowa gęstość mocy zależy od parametrów estymacji", "valid": false},
+                {"text": "zakładana jest wartość pewnych niezmienników widmowej gęstości mocy", "valid": false},
+                {"text": "jesteśmy w stanie wyestymować jedynie pewne parametry widmowej gęstości mocy", "valid": false},
             ]
         },
         {
-            "question": "W jakiej metodzie identyfikacji systemu moduł funkcji transmitancji wyznaczany jest z zależności <img src=\"http://latex.codecogs.com/png.latex?%20%20%7C%5Chat%20H%28f%29%7C%20%3D%20%7B%7B%5Chat%20A_y%28f%29%7D%20%5Cover%20%7B%5Chat%20A_x%28f%29%7D%7D%20\">, gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20A_x%20\"> i <img src=\"http://latex.codecogs.com/png.latex?%20%20A_y%20\"> s&#261; amplitudami sygna&#322;&#243;w wej&#347;ciowego i wyj&#347;ciowego  ",
+            "question": "W jakiej metodzie identyfikacji systemu moduł funkcji transmitancji wyznaczany jest z zależności <img src=\"http://latex.codecogs.com/png.latex?%20%20%7C%5Chat%20H%28f%29%7C%20%3D%20%7B%7B%5Chat%20A_y%28f%29%7D%20%5Cover%20%7B%5Chat%20A_x%28f%29%7D%7D%20\">, gdzie <img src=\"http://latex.codecogs.com/png.latex?%20%20A_x%20\"> i <img src=\"http://latex.codecogs.com/png.latex?%20%20A_y%20\"> są amplitudami sygnałów wejściowego i wyjściowego  ",
             "tip": "",
             "answer": [
                 {"text": "impulsowej", "valid": false},
@@ -1158,9 +1159,9 @@ var test = {
             "tip": "",
             "answer": [
                 {"text": "normalny", "valid": false},
-                {"text": "wyk&#322;adniczy", "valid": false},
+                {"text": "wykładniczy", "valid": false},
                 {"text": "Poissona", "valid": false},
-                {"text": "r&#243;wnomierny", "valid": true},
+                {"text": "równomierny", "valid": true},
             ]
         },
         {
@@ -1170,7 +1171,7 @@ var test = {
                 {"text": "przepustowego", "valid": false},
                 {"text": "minimalnego", "valid": false},
                 {"text": "zaporowego", "valid": true},
-                {"text": "przej&#347;ciowego", "valid": false},
+                {"text": "przejściowego", "valid": false},
             ]
         },
         {
@@ -1178,10 +1179,10 @@ var test = {
             "tip": "",
             "answer": [
                 {"text": "czas", "valid": false},
-                {"text": "cz&#281;stotliwo&#347;&#263;", "valid": false},
+                {"text": "częstotliwość", "valid": false},
                 {"text": "amplituda", "valid": false},
-                {"text": "przesuni&#281;cie", "valid": true},
-                {"text": "warto&#347;&#263; chwilowa", "valid": false},
+                {"text": "przesunięcie", "valid": true},
+                {"text": "wartość chwilowa", "valid": false},
             ]
         },
         {
@@ -1189,9 +1190,9 @@ var test = {
             "tip": "",
             "answer": [
                 {"text": "posiadanie jeszcze jednej zmiennej losowej jaka zwykle jest czas", "valid": false},
-                {"text": "posiadaniem jeszcze jednej zmiennej niezale&#380;nej jak&#261; zwykle jest czas", "valid": true},
-                {"text": "dwoma zmiennymi niezale&#380;nymi", "valid": true},
-                {"text": "kszta&#322;tem rozk&#322;adu prawdopodobie&#324;stwa", "valid": false},
+                {"text": "posiadaniem jeszcze jednej zmiennej niezależnej jaką zwykle jest czas", "valid": true},
+                {"text": "dwoma zmiennymi niezależnymi", "valid": true},
+                {"text": "kształtem rozkładu prawdopodobieństwa", "valid": false},
             ]
         },
         {
@@ -1210,11 +1211,11 @@ var test = {
             "question": "Zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20E%20%5C%7B%20x%28t%29%20%5C%7D%20\"> definiuje  ",
             "tip": "",
             "answer": [
-                {"text": "warto&#347;&#263; &#347;redni&#261; procesu stochastycznego", "valid": true},
-                {"text": "rozk&#322;ad prawdopodobie&#324;stwa procesu stochastycznego", "valid": false},
-                {"text": "wariancj&#281; procesu stochastycznego", "valid": false},
-                {"text": "warto&#347;&#263; &#347;redniokwadratow&#261; procesu stochastycznego", "valid": false},
-                {"text": "funkcj&#281; autokorelacji procesu stochastycznego", "valid": false},
+                {"text": "wartość średnią procesu stochastycznego", "valid": true},
+                {"text": "rozkład prawdopodobieństwa procesu stochastycznego", "valid": false},
+                {"text": "wariancję procesu stochastycznego", "valid": false},
+                {"text": "wartość średniokwadratową procesu stochastycznego", "valid": false},
+                {"text": "funkcję autokorelacji procesu stochastycznego", "valid": false},
             ]
         },
         {
@@ -1231,30 +1232,30 @@ var test = {
             "question": "Zmienną niezależną odpowiedzi impulsowej jest: ",
             "tip": "",
             "answer": [
-                {"text": "warto&#347;&#263; chwilowa", "valid": false},
+                {"text": "wartość chwilowa", "valid": false},
                 {"text": "amplituda", "valid": false},
-                {"text": "cz&#281;stotliwo&#347;&#263;", "valid": false},
+                {"text": "częstotliwość", "valid": false},
                 {"text": "czas", "valid": true},
-                {"text": "przesuni&#281;cie", "valid": false},
+                {"text": "przesunięcie", "valid": false},
             ]
         },
         {
             "question": "Definicja <img src=\"http://latex.codecogs.com/png.latex?%20F%28x%2Ct%29%20%3D%20P%5C%7Bx%28t%29%20%26amp%3Blt%3B%20x%5C%7D\"> jest:  ",
             "tip": "",
             "answer": [
-                {"text": "definicj&#261; dystrybuanty I-go rz&#281;du", "valid": true},
-                {"text": "definicj&#281; rozk&#322;adu prawdopodobie&#324;stwa II-go rz&#281;du", "valid": false},
-                {"text": "definicj&#261; rozk&#322;adu prawdopodobie&#324;stwa I-go rz&#281;du", "valid": false},
-                {"text": "definicj&#261; dystrybuanty II-go rz&#281;du", "valid": false},
+                {"text": "definicją dystrybuanty I-go rzędu", "valid": true},
+                {"text": "definicję rozkładu prawdopodobieństwa II-go rzędu", "valid": false},
+                {"text": "definicją rozkładu prawdopodobieństwa I-go rzędu", "valid": false},
+                {"text": "definicją dystrybuanty II-go rzędu", "valid": false},
             ]
         },
         {
             "question": "Widmo sygnału dyskretnego okresowego jest widmem ",
             "tip": "",
             "answer": [
-                {"text": "ci&#261;g&#322;ym nieokresowym", "valid": false},
+                {"text": "ciągłym nieokresowym", "valid": false},
                 {"text": "dyskretnym okresowym", "valid": true},
-                {"text": "ci&#261;g&#322;ym okresowym", "valid": false},
+                {"text": "ciągłym okresowym", "valid": false},
                 {"text": "dyskretnym nieokresowym", "valid": false},
             ]
         },
@@ -1262,30 +1263,30 @@ var test = {
             "question": "Proces stochastyczny musi: ",
             "tip": "",
             "answer": [
-                {"text": "musi zawiera&#263; wi&#281;cej ni&#380; jedn&#261; realizacj&#281;", "valid": true},
-                {"text": "zawiera&#263; co najmniej jedn&#261; realizacj&#281;", "valid": false},
-                {"text": "zawiara&#263; conajmniej 2 realizacje", "valid": true},
-                {"text": "zawiara&#263; niesko&#324;czenie wiele realizacji", "valid": false},
+                {"text": "musi zawierać więcej niż jedną realizację", "valid": true},
+                {"text": "zawierać co najmniej jedną realizację", "valid": false},
+                {"text": "zawiarać conajmniej 2 realizacje", "valid": true},
+                {"text": "zawiarać nieskończenie wiele realizacji", "valid": false},
             ]
         },
         {
             "question": "Filtry cyfrowe Butterworth'a charakteryzują się ",
             "tip": "",
             "answer": [
-                {"text": "minimalnym t&#322;umieniem w pa&#347;mie przepustowym", "valid": false},
-                {"text": "maksymalnym t&#322;umieniem w pa&#347;mie zaporowym", "valid": false},
-                {"text": "minimaln&#261; szeroko&#347;ci&#261; pasma przej&#347;ciowego", "valid": false},
-                {"text": "maksymalnie p&#322;askim modu&#322;em funkcji transmitancji", "valid": true},
+                {"text": "minimalnym tłumieniem w paśmie przepustowym", "valid": false},
+                {"text": "maksymalnym tłumieniem w paśmie zaporowym", "valid": false},
+                {"text": "minimalną szerokością pasma przejściowego", "valid": false},
+                {"text": "maksymalnie płaskim modułem funkcji transmitancji", "valid": true},
             ]
         },
         {
             "question": "Zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20E%20%5C%7Bx%28t_1%29%20x%28t_2%29%20%5C%7D%20\"> definiuje:  ",
             "tip": "",
             "answer": [
-                {"text": "funkcj&#281; autokowariancji dowolnego procesu ", "valid": false},
-                {"text": "funkcj&#281; autokorelacji dowolnego procesu ", "valid": true},
-                {"text": "funkcj&#281; autokowariancji procesu stacjonarnego ", "valid": false},
-                {"text": "funkcj&#281; autokorelacji procesu stacjonarnego", "valid": false},
+                {"text": "funkcję autokowariancji dowolnego procesu ", "valid": false},
+                {"text": "funkcję autokorelacji dowolnego procesu ", "valid": true},
+                {"text": "funkcję autokowariancji procesu stacjonarnego ", "valid": false},
+                {"text": "funkcję autokorelacji procesu stacjonarnego", "valid": false},
             ]
         },
         {
@@ -1302,18 +1303,18 @@ var test = {
             "question": "W odbiorniku realizowane jest ",
             "tip": "",
             "answer": [
-                {"text": "odtwarzanie no&#347;nej", "valid": true},
+                {"text": "odtwarzanie nośnej", "valid": true},
                 {"text": "dekompresja", "valid": true},
-                {"text": "filtracja odszumiaj&#261;ca", "valid": true},
-                {"text": "rozpakowanie blok&#243;w i segment&#243;w", "valid": true},
+                {"text": "filtracja odszumiająca", "valid": true},
+                {"text": "rozpakowanie bloków i segmentów", "valid": true},
             ]
         },
         {
             "question": "Widmo sygnału dyskretnego nieokresowego jest widmem ",
             "tip": "",
             "answer": [
-                {"text": "ci&#261;g&#322;ym nieokresowym", "valid": false},
-                {"text": "ci&#261;g&#322;ym okresowym", "valid": true},
+                {"text": "ciągłym nieokresowym", "valid": false},
+                {"text": "ciągłym okresowym", "valid": true},
                 {"text": "dyskretnym nieokresowym", "valid": false},
                 {"text": "dyskretnym okresowym", "valid": false},
             ]
@@ -1334,31 +1335,31 @@ var test = {
             "question": "Lokalna stacjonarność oznacza: ",
             "tip": "",
             "answer": [
-                {"text": "podobie&#324;stwo grup realizacji procesu ", "valid": false},
-                {"text": "cykliczno&#347;&#263; zmian g&#281;sto&#347;ci prawdopodobie&#324;stwa", "valid": false},
-                {"text": "s&#322;ab&#261; stacjonarno&#347;&#263; w po&#322;&#261;czeniu ze sko&#324;czonym czasem trwania procesu", "valid": false},
-                {"text": "niewielkie zmiany w sygnale na kr&#243;tkim odcinku czasu", "valid": true},
+                {"text": "podobieństwo grup realizacji procesu ", "valid": false},
+                {"text": "cykliczność zmian gęstości prawdopodobieństwa", "valid": false},
+                {"text": "słabą stacjonarność w połączeniu ze skończonym czasem trwania procesu", "valid": false},
+                {"text": "niewielkie zmiany w sygnale na krótkim odcinku czasu", "valid": true},
             ]
         },
         {
             "question": "Metody optymalizacyjne projektowania filtrów cyfrowych polegają na ",
             "tip": "",
             "answer": [
-                {"text": "wybraniu takiej struktury filtracji, aby koszt oblicze&#324; by&#322; jak najmniejszy", "valid": false},
-                {"text": "znalezieniu takiej konfiguracji zer i biegun&#243;w, aby ich wzajemna odleg&#322;o&#347;&#263; by&#322;a jak najmniejsza", "valid": false},
-                {"text": "poszukiwaniu takich warto&#347;ci wp&#243;&#322;czynnik&#243;w filtru aby szeroko&#347;&#263; pasma przej&#347;ciowego by&#322;a jak najmniejsza", "valid": false},
-                {"text": "poszukiwaniu takich warto&#347;ci wsp&#243;&#322;czynnik&#243;w aby osi&#261;gn&#261;&#263; minimum funkcji koszt&#243;w", "valid": true},
+                {"text": "wybraniu takiej struktury filtracji, aby koszt obliczeń był jak najmniejszy", "valid": false},
+                {"text": "znalezieniu takiej konfiguracji zer i biegunów, aby ich wzajemna odległość była jak najmniejsza", "valid": false},
+                {"text": "poszukiwaniu takich wartości wpółczynników filtru aby szerokość pasma przejściowego była jak najmniejsza", "valid": false},
+                {"text": "poszukiwaniu takich wartości współczynników aby osiągnąć minimum funkcji kosztów", "valid": true},
             ]
         },
         {
             "question": "Filtr minimalnofazowy posiada ",
             "tip": "",
             "answer": [
-                {"text": "minimalne z mo&#380;liwych zafalowania modu&#322;u transmitancji", "valid": false},
-                {"text": "minimaln&#261; warto&#347;&#263; sumy wsp&#243;&#322;czynnik&#243;w odpowiedzi impulsowej", "valid": false},
-                {"text": "maksymalnie p&#322;aski modu&#322; transmitancji", "valid": false},
-                {"text": "wszystkie zera ulokowane wewn&#261;trz okr&#281;gu jednostkowego", "valid": true},
-                {"text": "wszystkie zera ulokowane na zewn&#261;trz okr&#281;gu jednostkowego", "valid": false},
+                {"text": "minimalne z możliwych zafalowania modułu transmitancji", "valid": false},
+                {"text": "minimalną wartość sumy współczynników odpowiedzi impulsowej", "valid": false},
+                {"text": "maksymalnie płaski moduł transmitancji", "valid": false},
+                {"text": "wszystkie zera ulokowane wewnątrz okręgu jednostkowego", "valid": true},
+                {"text": "wszystkie zera ulokowane na zewnątrz okręgu jednostkowego", "valid": false},
             ]
         },
         {
@@ -1367,9 +1368,9 @@ var test = {
             "answer": [
                 {"text": "ortogonalnymi", "valid": true},
                 {"text": "zerowymi", "valid": false},
-                {"text": "niepowi&#261;zanymi", "valid": false},
-                {"text": "liniowo-niezale&#380;nymi", "valid": false},
-                {"text": "statystycznie niezale&#380;nymi", "valid": false},
+                {"text": "niepowiązanymi", "valid": false},
+                {"text": "liniowo-niezależnymi", "valid": false},
+                {"text": "statystycznie niezależnymi", "valid": false},
                 {"text": "lokalnie stacjonarnymi", "valid": false},
             ]
         },
@@ -1384,7 +1385,7 @@ var test = {
             ]
         },
         {
-            "question": "Jeżeli w próbkowanym sygnale maksymalna częstotliwość ma wartość <img src=\"http://latex.codecogs.com/png.latex?%20f_%7Bmax%7D\">, to twierdzenie o pr&#243;bkowaniu m&#243;wi, &#380;e minimalna cz&#281;stotliwo&#347;&#263; poprawnego pr&#243;bkowania musi by&#263;:  ",
+            "question": "Jeżeli w próbkowanym sygnale maksymalna częstotliwość ma wartość <img src=\"http://latex.codecogs.com/png.latex?%20f_%7Bmax%7D\">, to twierdzenie o próbkowaniu mówi, że minimalna częstotliwość poprawnego próbkowania musi być:  ",
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20f_s%5Cge%2010%5Ccdot%20f_%7Bmax%7D\"> ", "valid": false},
@@ -1394,26 +1395,26 @@ var test = {
             ]
         },
         {
-            "question": "Zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20d%28t%29%20%3D%20%5Csum_%7Bn%3D-%5Cinfty%7D%5E%7B%5Cinfty%7D%20a_n%20%5Chspace%7B2pt%7D%20g%28t-nT%29%20\"> opisuje sygna&#322; telekomunikacyjny  ",
+            "question": "Zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20d%28t%29%20%3D%20%5Csum_%7Bn%3D-%5Cinfty%7D%5E%7B%5Cinfty%7D%20a_n%20%5Chspace%7B2pt%7D%20g%28t-nT%29%20\"> opisuje sygnał telekomunikacyjny  ",
             "tip": "",
             "answer": [
-                {"text": "dyskretny na cz&#281;stotliwo&#347;ci po&#347;redniej", "valid": false},
-                {"text": "analogowy na cz&#281;stotliwo&#347;ci no&#347;nej", "valid": false},
-                {"text": "analogowy na cz&#281;stotliwo&#347;ci po&#347;redniej", "valid": false},
-                {"text": "dyskretny na cz&#281;stotliwo&#347;ci no&#347;nej", "valid": false},
-                {"text": "analogowy w pa&#347;mie podstawowym", "valid": true},
-                {"text": "dyskretny w pa&#347;mie podstawowym", "valid": false},
+                {"text": "dyskretny na częstotliwości pośredniej", "valid": false},
+                {"text": "analogowy na częstotliwości nośnej", "valid": false},
+                {"text": "analogowy na częstotliwości pośredniej", "valid": false},
+                {"text": "dyskretny na częstotliwości nośnej", "valid": false},
+                {"text": "analogowy w paśmie podstawowym", "valid": true},
+                {"text": "dyskretny w paśmie podstawowym", "valid": false},
             ]
         },
         {
             "question": "W ogólnym przypadku, zmienną niezależną dystrybuanty I-rzędu procesu stochastycznego jest: ",
             "tip": "",
             "answer": [
-                {"text": "prawdopodobie&#324;stwo", "valid": false},
+                {"text": "prawdopodobieństwo", "valid": false},
                 {"text": "czas", "valid": true},
-                {"text": "sygna&#322;", "valid": false},
+                {"text": "sygnał", "valid": false},
                 {"text": "wynik losowania", "valid": false},
-                {"text": "warto&#347;&#263; chwilowa sygna&#322;u", "valid": true},
+                {"text": "wartość chwilowa sygnału", "valid": true},
             ]
         },
         {
@@ -1422,19 +1423,19 @@ var test = {
             "answer": [
                 {"text": "dyskretnym okresowym", "valid": false},
                 {"text": "dyskretnym nieokresowym", "valid": false},
-                {"text": "ci&#261;g&#322;ym nieokresowym", "valid": true},
-                {"text": "ci&#261;g&#322;ym okresowym", "valid": false},
+                {"text": "ciągłym nieokresowym", "valid": true},
+                {"text": "ciągłym okresowym", "valid": false},
             ]
         },
         {
             "question": "Założenie o ergodyczności pozwala na: ",
             "tip": "",
             "answer": [
-                {"text": "skorzystanie z poj&#281;cia lokalnej stacjonarno&#347;ci", "valid": false},
-                {"text": "zast&#261;pienie u&#347;redniania po zbiorze u&#347;rednianiem po czasie przy wyznaczaniu statystyk procesu ", "valid": true},
-                {"text": "wyznaczenie estymator&#243;w statystyk procesu na podstawie jednej realizacji", "valid": true},
+                {"text": "skorzystanie z pojęcia lokalnej stacjonarności", "valid": false},
+                {"text": "zastąpienie uśredniania po zbiorze uśrednianiem po czasie przy wyznaczaniu statystyk procesu ", "valid": true},
+                {"text": "wyznaczenie estymatorów statystyk procesu na podstawie jednej realizacji", "valid": true},
                 {"text": "wyznaczenie statystyk procesu stacjonarnego", "valid": false},
-                {"text": "wyznaczenie statystyk procesu dysponuj&#261;c jedynie jedn&#261; realizacj&#261;", "valid": true},
+                {"text": "wyznaczenie statystyk procesu dysponując jedynie jedną realizacją", "valid": true},
             ]
         },
         {
@@ -1451,18 +1452,18 @@ var test = {
             "question": "Obciążenie estymatora opisuje ",
             "tip": "",
             "answer": [
-                {"text": "na ile &#347;rednio wynik estymacji r&#243;&#380;ni&#322; si&#281; b&#281;dzie od dok&#322;adnej warto&#347;ci", "valid": true},
-                {"text": "na ile dany wynik b&#281;dzie si&#281; r&#243;&#380;ni&#322; od poprzedniego wyniku", "valid": false},
-                {"text": "na ile dany wynik b&#281;dzie si&#281; r&#243;&#380;ni&#322; od warto&#347;ci dok&#322;adnej", "valid": false},
-                {"text": "rozrzut wynik&#243;w wok&#243;&#322; warto&#347;ci &#347;redniej wynik&#243;w estymacji", "valid": false},
+                {"text": "na ile średnio wynik estymacji różnił się będzie od dokładnej wartości", "valid": true},
+                {"text": "na ile dany wynik będzie się różnił od poprzedniego wyniku", "valid": false},
+                {"text": "na ile dany wynik będzie się różnił od wartości dokładnej", "valid": false},
+                {"text": "rozrzut wyników wokół wartości średniej wyników estymacji", "valid": false},
             ]
         },
         {
             "question": "Współczynniki filtru FIR (o skończonej odpowiedzi impulsowej) to ",
             "tip": "",
             "answer": [
-                {"text": "warto&#347;ci pr&#261;&#380;k&#243;w widma sygna&#322;u wej&#347;ciowego filtru", "valid": false},
-                {"text": "ci&#261;g warto&#347;ci odpowiedzi impulsowej filtru", "valid": true},
+                {"text": "wartości prążków widma sygnału wejściowego filtru", "valid": false},
+                {"text": "ciąg wartości odpowiedzi impulsowej filtru", "valid": true},
                 {"text": "transformata Fouriera odpowiedzi impulsowej", "valid": false},
                 {"text": "zera i bieguny filtru", "valid": false},
             ]
@@ -1492,32 +1493,32 @@ var test = {
             "question": "Proces normalny (gaussowski) to taki proces, którego: ",
             "tip": "",
             "answer": [
-                {"text": "widmowa g&#281;sto&#347;&#263; mocy jest krzyw&#261; Gaussa", "valid": false},
-                {"text": "autokorelacja jest krzyw&#261; Gaussa", "valid": false},
-                {"text": "rozk&#322;ad prawdopodobie&#324;stwa jest krzyw&#261; Gaussa", "valid": true},
-                {"text": "dystrybuanta jest krzyw&#261; Gaussa", "valid": false},
+                {"text": "widmowa gęstość mocy jest krzywą Gaussa", "valid": false},
+                {"text": "autokorelacja jest krzywą Gaussa", "valid": false},
+                {"text": "rozkład prawdopodobieństwa jest krzywą Gaussa", "valid": true},
+                {"text": "dystrybuanta jest krzywą Gaussa", "valid": false},
             ]
         },
         {
             "question": "Estymacja to ",
             "tip": "",
             "answer": [
-                {"text": "oszacowanie statystyki b&#261;d&#378; parametru procesu stochastycznego na podstawie sko&#324;czonego zbioru pr&#243;bek jednej z realizacji", "valid": true},
-                {"text": "oszacowanie statystyki lub parametru procesu stochastycznego na podstawie sko&#324;czonego zbioru pr&#243;bek kilku realizacji", "valid": false},
-                {"text": "oszacowanie statystyki b&#261;d&#378; parametru procesu stochastycznego na podstawie jednej realizacji", "valid": false},
-                {"text": "odtworzenie sygna&#322;u analogowego na podstawie pr&#243;bek sygna&#322;u cyfrowego", "valid": false},
-                {"text": "oszacowanie warto&#347;ci sygna&#322;u analogowego na podstawie pr&#243;bek sygna&#322;u", "valid": false},
-                {"text": "oszacowanie przysz&#322;ej warto&#347;ci procesu stochastycznego na podstawie zbioru pr&#243;bek", "valid": false},
+                {"text": "oszacowanie statystyki bądź parametru procesu stochastycznego na podstawie skończonego zbioru próbek jednej z realizacji", "valid": true},
+                {"text": "oszacowanie statystyki lub parametru procesu stochastycznego na podstawie skończonego zbioru próbek kilku realizacji", "valid": false},
+                {"text": "oszacowanie statystyki bądź parametru procesu stochastycznego na podstawie jednej realizacji", "valid": false},
+                {"text": "odtworzenie sygnału analogowego na podstawie próbek sygnału cyfrowego", "valid": false},
+                {"text": "oszacowanie wartości sygnału analogowego na podstawie próbek sygnału", "valid": false},
+                {"text": "oszacowanie przyszłej wartości procesu stochastycznego na podstawie zbioru próbek", "valid": false},
             ]
         },
         {
-            "question": "W zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20d%28t%29%20%3D%20%5Csum_%7Bn%3D-%5Cinfty%7D%5E%7B%5Cinfty%7D%20a_n%20%5Chspace%7B2pt%7D%20g%28t-nT%29%20\"> opisuj&#261;cej sygna&#322; telekomunikacyjny, <img src=\"http://latex.codecogs.com/png.latex?%20%20g%20\"> jest  ",
+            "question": "W zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20d%28t%29%20%3D%20%5Csum_%7Bn%3D-%5Cinfty%7D%5E%7B%5Cinfty%7D%20a_n%20%5Chspace%7B2pt%7D%20g%28t-nT%29%20\"> opisującej sygnał telekomunikacyjny, <img src=\"http://latex.codecogs.com/png.latex?%20%20g%20\"> jest  ",
             "tip": "",
             "answer": [
                 {"text": "filtrem nadawczym", "valid": true},
-                {"text": "oknem czasowym kszta&#322;tuj&#261;cym widmo sygna&#322;u", "valid": true},
+                {"text": "oknem czasowym kształtującym widmo sygnału", "valid": true},
                 {"text": "filtrem transmisyjnym", "valid": true},
-                {"text": "oknem cz&#281;stotliwo&#347;ciowym kszta&#322;tuj&#261;cym widmo sygna&#322;u", "valid": false},
+                {"text": "oknem częstotliwościowym kształtującym widmo sygnału", "valid": false},
             ]
         },
         {
@@ -1531,14 +1532,14 @@ var test = {
             ]
         },
         {
-            "question": "W zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20d%28t%29%20%3D%20%5Csum_%7Bn%3D-%5Cinfty%7D%5E%7B%5Cinfty%7D%20a_n%20%5Chspace%7B2pt%7D%20g%28t-nT%29%20\"> opisuj&#261;cej sygna&#322; telekomunikacyjny, <img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> jest  ",
+            "question": "W zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20d%28t%29%20%3D%20%5Csum_%7Bn%3D-%5Cinfty%7D%5E%7B%5Cinfty%7D%20a_n%20%5Chspace%7B2pt%7D%20g%28t-nT%29%20\"> opisującej sygnał telekomunikacyjny, <img src=\"http://latex.codecogs.com/png.latex?%20%20T%20\"> jest  ",
             "tip": "",
             "answer": [
                 {"text": "czasem trwania symbolu", "valid": true},
                 {"text": "czasem trwania bitu informacji", "valid": false},
-                {"text": "odst&#281;pem pomi&#281;dzy pr&#243;bkami ", "valid": false},
-                {"text": "okresem drga&#324; no&#347;nej", "valid": false},
-                {"text": "czasem trwania pr&#243;bki ", "valid": false},
+                {"text": "odstępem pomiędzy próbkami ", "valid": false},
+                {"text": "okresem drgań nośnej", "valid": false},
+                {"text": "czasem trwania próbki ", "valid": false},
             ]
         },
         {
@@ -1547,31 +1548,31 @@ var test = {
             "answer": [
                 {"text": "zmniejszenia przecieku widma", "valid": true},
                 {"text": "zmniejszenia wariancji estymatora wgm", "valid": true},
-                {"text": "wyg&#322;adzenia sygna&#322;u", "valid": false},
-                {"text": "wyci&#281;cia fragmentu sygna&#322;u", "valid": false},
-                {"text": "zmniejszenia szeroko&#347;ci pasma przej&#347;ciowego", "valid": false},
+                {"text": "wygładzenia sygnału", "valid": false},
+                {"text": "wycięcia fragmentu sygnału", "valid": false},
+                {"text": "zmniejszenia szerokości pasma przejściowego", "valid": false},
             ]
         },
         {
             "question": "Poziomą osią wykresu funkcji autokorelacji jest oś: ",
             "tip": "",
             "answer": [
-                {"text": "przesuni&#281;cia", "valid": true},
-                {"text": "warto&#347;ci chwilowej", "valid": false},
+                {"text": "przesunięcia", "valid": true},
+                {"text": "wartości chwilowej", "valid": false},
                 {"text": "amplitudy", "valid": false},
-                {"text": "cz&#281;stotliwo&#347;ci", "valid": false},
+                {"text": "częstotliwości", "valid": false},
                 {"text": "czasu", "valid": false},
             ]
         },
         {
-            "question": "W zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20d%28t%29%20%3D%20%5Csum_%7Bn%3D-%5Cinfty%7D%5E%7B%5Cinfty%7D%20a_n%20%5Chspace%7B2pt%7D%20g%28t-nT%29%20\"> opisuj&#261;cej sygna&#322; telekomunikacyjny, <img src=\"http://latex.codecogs.com/png.latex?%20%20a_n%20\"> jest  ",
+            "question": "W zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20d%28t%29%20%3D%20%5Csum_%7Bn%3D-%5Cinfty%7D%5E%7B%5Cinfty%7D%20a_n%20%5Chspace%7B2pt%7D%20g%28t-nT%29%20\"> opisującej sygnał telekomunikacyjny, <img src=\"http://latex.codecogs.com/png.latex?%20%20a_n%20\"> jest  ",
             "tip": "",
             "answer": [
-                {"text": "ci&#261;giem symboli zawieraj&#261;cych informacj&#281;", "valid": false},
-                {"text": "ci&#261;giem warto&#347;ci odpowiadaj&#261;cych symbolom", "valid": true},
-                {"text": "ci&#261;giem warto&#347;ci odpowiadaj&#261;cych bitom", "valid": false},
-                {"text": "ci&#261;giem bit&#243;w zawieraj&#261;cych informacj&#281;", "valid": false},
-                {"text": "sygna&#322;em dyskretnym przed modulacj&#261;", "valid": false},
+                {"text": "ciągiem symboli zawierających informację", "valid": false},
+                {"text": "ciągiem wartości odpowiadających symbolom", "valid": true},
+                {"text": "ciągiem wartości odpowiadających bitom", "valid": false},
+                {"text": "ciągiem bitów zawierających informację", "valid": false},
+                {"text": "sygnałem dyskretnym przed modulacją", "valid": false},
             ]
         },
         {
@@ -1580,32 +1581,32 @@ var test = {
             "answer": [
                 {"text": "kompresja", "valid": true},
                 {"text": "kodowanie", "valid": true},
-                {"text": "odtwarzanie no&#347;nej", "valid": false},
-                {"text": "filtracja odszumiaj&#261;ca", "valid": false},
-                {"text": "formowanie blok&#243;w i segment&#243;w", "valid": true},
+                {"text": "odtwarzanie nośnej", "valid": false},
+                {"text": "filtracja odszumiająca", "valid": false},
+                {"text": "formowanie bloków i segmentów", "valid": true},
                 {"text": "dekompresja", "valid": false},
             ]
         },
         {
-            "question": "W definicji transformacji Z <img src=\"http://latex.codecogs.com/png.latex?%20%20%5Csum_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D%20x%28t%29%20z%5E%7B-t%7D%20\"> wielko&#347;&#263; <img src=\"http://latex.codecogs.com/png.latex?%20%20z%20\"> oznacza  ",
+            "question": "W definicji transformacji Z <img src=\"http://latex.codecogs.com/png.latex?%20%20%5Csum_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D%20x%28t%29%20z%5E%7B-t%7D%20\"> wielkość <img src=\"http://latex.codecogs.com/png.latex?%20%20z%20\"> oznacza  ",
             "tip": "",
             "answer": [
-                {"text": "funkcj&#281; rzeczywist&#261;", "valid": false},
-                {"text": "funkcje zespolon&#261;", "valid": false},
-                {"text": "liczb&#281; zespolon&#261;", "valid": true},
-                {"text": "liczb&#281; urojon&#261;", "valid": false},
-                {"text": "funkcj&#281; urojon&#261;", "valid": false},
-                {"text": "liczb&#281; rzeczywist&#261;", "valid": false},
+                {"text": "funkcję rzeczywistą", "valid": false},
+                {"text": "funkcje zespoloną", "valid": false},
+                {"text": "liczbę zespoloną", "valid": true},
+                {"text": "liczbę urojoną", "valid": false},
+                {"text": "funkcję urojoną", "valid": false},
+                {"text": "liczbę rzeczywistą", "valid": false},
             ]
         },
         {
             "question": "Zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20s%28t%29%20%3D%20d%28t%29%20%5Ccos%282%20%5Cpi%20f%20t%20%29%20\"> jest zapisem matematycznym cyfrowej modulacji  ",
             "tip": "",
             "answer": [
-                {"text": "z kluczowaniem cz&#261;stotliwo&#347;ci", "valid": false},
+                {"text": "z kluczowaniem cząstotliwości", "valid": false},
                 {"text": "z kluczowaniem amplitudy", "valid": true},
                 {"text": "fazy", "valid": false},
-                {"text": "cz&#281;stotliwo&#347;ci", "valid": false},
+                {"text": "częstotliwości", "valid": false},
                 {"text": "z kluczowaniem fazy", "valid": false},
             ]
         },
@@ -1613,30 +1614,30 @@ var test = {
             "question": "Zwielokrotnienie TDMA (time division multiple access) oznacza ",
             "tip": "",
             "answer": [
-                {"text": "jednoczesna prac&#281; wielu u&#380;ytkownik&#243;w na tej samej cz&#281;stotliwo&#347;ci i w tym samym czasie", "valid": false},
-                {"text": "jednoczesn&#261; prac&#281; wielu u&#380;ytkownik&#243;w w tym samym czasie na zmieniaj&#261;cych si&#281; cz&#281;stotliwo&#347;ciach", "valid": false},
-                {"text": "jednoczesn&#261; prac&#281; wielu u&#380;ytkownik&#243;w na tej samej cz&#281;stotliwo&#347;ci", "valid": true},
-                {"text": "jednoczesn&#261; prac&#281; wielu u&#380;ytkownik&#243;w z wykorzystaniem r&#243;&#380;nych kod&#243;w dost&#281;pu", "valid": false},
+                {"text": "jednoczesna pracę wielu użytkowników na tej samej częstotliwości i w tym samym czasie", "valid": false},
+                {"text": "jednoczesną pracę wielu użytkowników w tym samym czasie na zmieniających się częstotliwościach", "valid": false},
+                {"text": "jednoczesną pracę wielu użytkowników na tej samej częstotliwości", "valid": true},
+                {"text": "jednoczesną pracę wielu użytkowników z wykorzystaniem różnych kodów dostępu", "valid": false},
             ]
         },
         {
             "question": "Modulacja QAM charakteryzuje się wykorzystaniem ",
-            "tip": "",
+            "tip": "AM - Amplitude Modulation",
             "answer": [
-                {"text": "dw&#243;ch no&#347;nych o zbli&#380;onych cz&#281;stotliwo&#347;ciach przesuni&#281;tych o 180st", "valid": false},
-                {"text": "dw&#243;ch no&#347;nych o tej samej cz&#281;stotliwo&#347;ci przesuni&#281;tych o 90st", "valid": true},
-                {"text": "dw&#243;ch no&#347;nych o tej samej cz&#281;stotliwo&#347;ci przesuni&#281;tych o 180st", "valid": false},
-                {"text": "dw&#243;ch no&#347;nych o zbli&#380;onych cz&#281;stotliwo&#347;ciach przesuni&#281;tych o 90st", "valid": false},
+                {"text": "dwóch nośnych o zbliżonych częstotliwościach przesuniętych o 180st", "valid": false},
+                {"text": "dwóch nośnych o tej samej częstotliwości przesuniętych o 90st", "valid": true},
+                {"text": "dwóch nośnych o tej samej częstotliwości przesuniętych o 180st", "valid": false},
+                {"text": "dwóch nośnych o zbliżonych częstotliwościach przesuniętych o 90st", "valid": false},
             ]
         },
         {
             "question": "Cyklostacjonarność definiowana jest dla: ",
             "tip": "",
             "answer": [
-                {"text": "sygna&#322;&#243;w okresowych", "valid": false},
-                {"text": "dowolnych sygna&#322;&#243;w stacjonarnych", "valid": false},
-                {"text": "sygna&#322;&#243;w telekomunikacji cyfrowej", "valid": true},
-                {"text": "sygna&#322;&#243;w telekomunikacyjnych", "valid": false},
+                {"text": "sygnałów okresowych", "valid": false},
+                {"text": "dowolnych sygnałów stacjonarnych", "valid": false},
+                {"text": "sygnałów telekomunikacji cyfrowej", "valid": true},
+                {"text": "sygnałów telekomunikacyjnych", "valid": false},
             ]
         },
         {
@@ -1650,7 +1651,7 @@ var test = {
             ]
         },
         {
-            "question": "Jeśli <img src=\"http://latex.codecogs.com/png.latex?%20%20%5Calpha%20\"> jest poziomem ufno&#347;ci a <img src=\"http://latex.codecogs.com/png.latex?%20%20%5Ba%2Cb%5D%20\"> jest przedzia&#322;em ufno&#347;ci estymatora <img src=\"http://latex.codecogs.com/png.latex?%20%20%5Chat%20A%20\"> o rozk&#322;adzie <img src=\"http://latex.codecogs.com/png.latex?%20%20f%28%5Chat%20A%29%20\">, to prawdziwa jest zale&#380;no&#347;&#263;  ",
+            "question": "Jeśli <img src=\"http://latex.codecogs.com/png.latex?%20%20%5Calpha%20\"> jest poziomem ufności a <img src=\"http://latex.codecogs.com/png.latex?%20%20%5Ba%2Cb%5D%20\"> jest przedziałem ufności estymatora <img src=\"http://latex.codecogs.com/png.latex?%20%20%5Chat%20A%20\"> o rozkładzie <img src=\"http://latex.codecogs.com/png.latex?%20%20f%28%5Chat%20A%29%20\">, to prawdziwa jest zależność  ",
             "tip": "",
             "answer": [
                 {"text": "<img src=\"http://latex.codecogs.com/png.latex?%20%20%5Ba%2Cb%5D%20%3D%20%5Cint_a%5Eb%20f%28%5Calpha%29%20d%20%5Calpha%20\">  ", "valid": false},
@@ -1663,11 +1664,11 @@ var test = {
             "question": "Poziomą osią wykresu odpowiedzi impulsowej jest oś: ",
             "tip": "",
             "answer": [
-                {"text": "warto&#347;ci chwilowej", "valid": false},
-                {"text": "cz&#281;stotliwo&#347;ci", "valid": false},
+                {"text": "wartości chwilowej", "valid": false},
+                {"text": "częstotliwości", "valid": false},
                 {"text": "amplitudy", "valid": false},
                 {"text": "czasu", "valid": true},
-                {"text": "przesuni&#281;cia", "valid": false},
+                {"text": "przesunięcia", "valid": false},
             ]
         },
         {
@@ -1684,75 +1685,75 @@ var test = {
             "question": "W celu uzyskania częstotliwości unormowanej (przy projektowaniu filtrów cyfrowych) ",
             "tip": "",
             "answer": [
-                {"text": "cz&#281;stotliwo&#347;ci pr&#243;bkowania dzielimy przez rzeczywist&#261; cz&#281;stotliwo&#347;&#263;", "valid": false},
-                {"text": "cz&#281;stotliwo&#347;&#263; pr&#243;bkowania dzielimy przez podw&#243;jna rzeczywist&#261; cz&#281;stotliwo&#347;&#263;", "valid": false},
-                {"text": "rzeczywist&#261; cz&#281;stotliwo&#347;&#263; dzielimy przez podw&#243;jn&#261; cz&#281;stotliwo&#347;ci pr&#243;bkowania", "valid": false},
-                {"text": "rzeczywist&#261; cz&#281;stotliwo&#347;&#263; dzielimy przez cz&#281;stotliwo&#347;ci pr&#243;bkowania", "valid": true},
+                {"text": "częstotliwości próbkowania dzielimy przez rzeczywistą częstotliwość", "valid": false},
+                {"text": "częstotliwość próbkowania dzielimy przez podwójna rzeczywistą częstotliwość", "valid": false},
+                {"text": "rzeczywistą częstotliwość dzielimy przez podwójną częstotliwości próbkowania", "valid": false},
+                {"text": "rzeczywistą częstotliwość dzielimy przez częstotliwości próbkowania", "valid": true},
             ]
         },
         {
             "question": "Szerokość pasma przejściowego filtru cyfrowego nie może być zerowa, ponieważ ",
             "tip": "",
             "answer": [
-                {"text": "taki filtr by&#322;by filtrem nieprzyczynowym", "valid": false},
-                {"text": "wzmocnienie takiego filtru by&#322;oby niesko&#324;czenie wielkie", "valid": false},
-                {"text": "przej&#347;cie pomi&#281;dzy pasmem przepustowym a zaporowym nie mo&#380;e si&#281; odbywa&#263; w niesko&#324;czenie kr&#243;tkim czasie", "valid": false},
-                {"text": "liczba zer lub biegun&#243;w musia&#322;aby by&#263; niesko&#324;czona", "valid": true},
+                {"text": "taki filtr byłby filtrem nieprzyczynowym", "valid": false},
+                {"text": "wzmocnienie takiego filtru byłoby nieskończenie wielkie", "valid": false},
+                {"text": "przejście pomiędzy pasmem przepustowym a zaporowym nie może się odbywać w nieskończenie krótkim czasie", "valid": false},
+                {"text": "liczba zer lub biegunów musiałaby być nieskończona", "valid": true},
             ]
         },
         {
             "question": "Filtr cyfrowy jest stabilny, jeśli ",
             "tip": "",
             "answer": [
-                {"text": "bieguny transmitancji le&#380;&#261; wewn&#261;trz okr&#281;gu jednostkowego", "valid": true},
-                {"text": "zera i bieguny transmitancji le&#380;&#261; wewn&#261;trz okr&#281;gu jednostkowego", "valid": false},
-                {"text": "bieguny transmitancji le&#380;&#261; w lewej p&#243;&#322;p&#322;aszczy&#378;nie", "valid": false},
-                {"text": "zera transmitancji le&#380;&#261; w lewej p&#243;&#322;p&#322;aszczy&#380;nie", "valid": false},
-                {"text": "zera transmitancji le&#380;&#261; wewn&#261;trz okr&#281;gu jednostkowego", "valid": false},
+                {"text": "bieguny transmitancji leżą wewnątrz okręgu jednostkowego", "valid": true},
+                {"text": "zera i bieguny transmitancji leżą wewnątrz okręgu jednostkowego", "valid": false},
+                {"text": "bieguny transmitancji leżą w lewej półpłaszczyźnie", "valid": false},
+                {"text": "zera transmitancji leżą w lewej półpłaszczyżnie", "valid": false},
+                {"text": "zera transmitancji leżą wewnątrz okręgu jednostkowego", "valid": false},
             ]
         },
         {
             "question": "Zmienną niezależną histogramu jest: ",
             "tip": "",
             "answer": [
-                {"text": "przesuni&#281;cie", "valid": false},
+                {"text": "przesunięcie", "valid": false},
                 {"text": "czas", "valid": false},
-                {"text": "warto&#347;&#263; chwilowa", "valid": true},
+                {"text": "wartość chwilowa", "valid": true},
                 {"text": "amplituda", "valid": false},
-                {"text": "cz&#281;stotliwo&#347;&#263;", "valid": false},
+                {"text": "częstotliwość", "valid": false},
             ]
         },
         {
             "question": "Przeciek widma w wyniku transformacji Fouriera występuje ponieważ ",
             "tip": "",
             "answer": [
-                {"text": "wyst&#281;puj&#261; b&#322;&#281;dy kwantowania", "valid": false},
-                {"text": "dokonano uzupe&#322;nienia sygna&#322;u zerowymi pr&#243;bkami", "valid": true},
-                {"text": "wyst&#281;puje efekt obci&#281;cia", "valid": true},
-                {"text": "sygna&#322; nie jest symetryczny", "valid": false},
-                {"text": "wyst&#281;puj&#261; b&#322;&#281;dy pr&#243;bkowania", "valid": false},
+                {"text": "występują błędy kwantowania", "valid": false},
+                {"text": "dokonano uzupełnienia sygnału zerowymi próbkami", "valid": true},
+                {"text": "występuje efekt obcięcia", "valid": true},
+                {"text": "sygnał nie jest symetryczny", "valid": false},
+                {"text": "występują błędy próbkowania", "valid": false},
             ]
         },
         {
             "question": "Do zbudowania grafu przepływu filtra cyfrowego potrzebne są elementy ",
             "tip": "",
             "answer": [
-                {"text": "mno&#380;&#261;ce pr&#243;bk&#281; przez liczb&#281;", "valid": true},
-                {"text": "sumuj&#261;ce kilka pr&#243;bek", "valid": false},
-                {"text": "sumuj&#261;ce 2 pr&#243;bki", "valid": true},
-                {"text": "rotuj&#261;ce", "valid": false},
-                {"text": "op&#243;&#378;niaj&#261;ce", "valid": true},
-                {"text": "mno&#380;&#261;ce pr&#243;bki", "valid": false},
+                {"text": "mnożące próbkę przez liczbę", "valid": true},
+                {"text": "sumujące kilka próbek", "valid": false},
+                {"text": "sumujące 2 próbki", "valid": true},
+                {"text": "rotujące", "valid": false},
+                {"text": "opóźniające", "valid": true},
+                {"text": "mnożące próbki", "valid": false},
             ]
         },
         {
             "question": "Zależność <img src=\"http://latex.codecogs.com/png.latex?%20%20C%28t_1%2Ct_2%29%20%3D%20E%20%5C%7B%20%5Bx%28t_1%29%20-%20m%28t_1%29%5D%5Bx%28t_2%29%20-%20m%28t_2%29%5D%20%5C%7D%20\"> definiuje:  ",
             "tip": "",
             "answer": [
-                {"text": "funkcj&#281; autokorelacji dowolnego procesu ", "valid": false},
-                {"text": "funkcj&#281; autokorelacji procesu stacjonarnego", "valid": false},
-                {"text": "funkcj&#281; autokowariancji procesu stacjonarnego", "valid": false},
-                {"text": "funkcj&#281; autokowariancji dowolnego procesu", "valid": true},
+                {"text": "funkcję autokorelacji dowolnego procesu ", "valid": false},
+                {"text": "funkcję autokorelacji procesu stacjonarnego", "valid": false},
+                {"text": "funkcję autokowariancji procesu stacjonarnego", "valid": false},
+                {"text": "funkcję autokowariancji dowolnego procesu", "valid": true},
             ]
         },
         {
@@ -1763,7 +1764,7 @@ var test = {
                 {"text": "projekcji ortogonalnej", "valid": false},
                 {"text": "okna", "valid": true},
                 {"text": "transformacji dwuliniowej", "valid": false},
-                {"text": "sko&#324;czonych iteracji", "valid": false},
+                {"text": "skończonych iteracji", "valid": false},
             ]
         },
         {
@@ -1781,10 +1782,10 @@ var test = {
             "question": "Estymator jest wielkością losową, ponieważ zależy od ",
             "tip": "",
             "answer": [
-                {"text": "wyboru fragment&#243;w realizacji", "valid": false},
-                {"text": "realizacji pr&#243;bkowania i kwantowania sygna&#322;u", "valid": false},
+                {"text": "wyboru fragmentów realizacji", "valid": false},
+                {"text": "realizacji próbkowania i kwantowania sygnału", "valid": false},
                 {"text": "wyboru fragmentu realizacji", "valid": true},
-                {"text": "liczby pr&#243;bek", "valid": false},
+                {"text": "liczby próbek", "valid": false},
             ]
         },
         {
@@ -1798,10 +1799,10 @@ var test = {
             "tip": "",
             "answer": [
                 {"text": "z kluczowaniem amplitudy", "valid": false},
-                {"text": "cz&#281;stotliwo&#347;ci", "valid": false},
+                {"text": "częstotliwości", "valid": false},
                 {"text": "z kluczowaniem fazy", "valid": true},
                 {"text": "amplitudy", "valid": false},
-                {"text": "z kluczowaniem cz&#281;stotliwo&#347;ci", "valid": false},
+                {"text": "z kluczowaniem częstotliwości", "valid": false},
             ]
         }
     ]

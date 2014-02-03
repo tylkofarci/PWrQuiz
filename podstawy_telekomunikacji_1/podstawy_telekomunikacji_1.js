@@ -1,6 +1,7 @@
 var test = {
     "time": 25,
     "testQuestionCount": 40,
+    "multiAnswer": false,
     "questionList": [
         {
             "question": "Schemat systemu przekazywania wiadomości za pomocą sygnałów zawiera następujące bloki: ",

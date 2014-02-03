@@ -5,6 +5,7 @@
 //TODO wersja w pliku z pytaniami, tytul i data modyfikacji, ewentualny changelogi opis
 //TODO zamiast pokaz pokazuje po kliknieciu sprawdz
 //TODO zle przenosi do kolojnego pytania
+//TODO nie ma mozliwosci checkbozow zawsze
 var result = 0;
 var randomArr;
 var currentQuestion = 0;
@@ -24,7 +25,7 @@ function _Question(_question) {
     this.print = function() {
         var inputType = "radio";
         var html = "<div class=\"question\">";
-        if (this.validAnswerCount > 1)
+        if (this.validAnswerCount > 1 || test['multiAnswer'] == true)
         {
             inputType = "checkbox";
         }
